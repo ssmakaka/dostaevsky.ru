@@ -1,0 +1,2180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="scss/style-add.css">
+
+    <title></title>
+</head>
+
+<body class="body body_sticky-block">
+    <div class="page">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__main-nav">
+                    <button class="main-nav-button" type="button"><span></span><span></span><span></span></button>
+                </div>
+                <div class="header__logo"><a href="/" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="86"
+                            height="30" viewBox="0 0 86 30" fill="none">
+                            <path
+                                d="M6.60443 10.9016C9.65819 10.9016 10.8486 9.46525 10.8486 7.20216C10.8486 4.88021 9.65819 3.46314 6.60443 3.46314H4.9976V10.9016H6.60443ZM1.23047 0.295166H6.7037C9.87695 0.295166 11.3599 1.063 12.6733 2.32193C13.9419 3.56154 14.6157 5.25446 14.6157 7.20392C14.6157 9.23068 13.862 11.022 12.4343 12.2616C11.1253 13.4037 9.18379 14.0723 6.70282 14.0723H1.23047V0.295166Z"
+                                fill="white"></path>
+                            <path
+                                d="M22.7273 11.1873C24.9684 11.1873 26.3363 9.69379 26.3363 7.19262C26.3363 4.67387 24.9675 3.17774 22.7273 3.17774C20.487 3.17774 19.1183 4.67124 19.1183 7.19262C19.1183 9.69203 20.487 11.1873 22.7273 11.1873ZM22.7273 0.00976562C27.1893 0.00976562 30.1069 3.17774 30.1069 7.19262C30.1069 11.1873 27.192 14.3561 22.7273 14.3561C18.2468 14.3561 15.3477 11.1873 15.3477 7.19262C15.3477 3.17774 18.2468 0.00976562 22.7273 0.00976562Z"
+                                fill="white"></path>
+                            <path
+                                d="M43.7148 0.295166H56.5651V3.54221H52.1039V14.0705H48.1769V3.54221H43.7148V0.295166Z"
+                                fill="white"></path>
+                            <path
+                                d="M22.9062 26.8829C23.8576 26.8829 24.5517 26.2337 24.5517 25.407C24.5517 24.5609 23.8576 23.9135 22.9062 23.9135H19.2164V26.8829H22.9062ZM22.6286 21.2155C23.4816 21.2155 23.9973 20.6647 23.9973 19.9952C23.9973 19.3258 23.4816 18.775 22.6286 18.775H19.2172V21.2155H22.6286ZM15.4501 15.9443H23.1811C26.1356 15.9443 27.6616 17.4378 27.6616 19.3293C27.6616 20.6278 27.0669 21.3561 26.5117 21.7892C26.1658 22.0339 25.775 22.2076 25.3617 22.3005V22.4182C25.8865 22.5321 26.3889 22.7316 26.849 23.0086C27.5826 23.5006 28.3566 24.307 28.3566 25.8032C28.3566 28.0469 26.5319 29.7197 23.1803 29.7197H15.4492L15.4501 15.9443Z"
+                                fill="white"></path>
+                            <path
+                                d="M35.9946 15.6528C38.9095 15.6528 40.7536 16.9126 41.7454 18.27C42.3402 19.0369 42.7373 19.9822 42.9552 20.9855H39.2864C39.1387 20.5918 38.9251 20.2261 38.6548 19.904C38.1391 19.3769 37.3458 18.8217 35.9972 18.8217C33.8158 18.8217 32.3882 20.3152 32.3882 22.8357C32.3882 25.3149 33.8158 26.8304 35.9972 26.8304C37.3458 26.8304 38.1391 26.3032 38.6548 25.7673C38.925 25.4455 39.1386 25.0801 39.2864 24.6867H42.9947C42.8319 25.6714 42.4227 26.5989 41.8052 27.3829C40.7509 28.7209 38.8507 30.0001 35.919 30.0001C31.6142 30.0001 28.6211 26.9498 28.6211 22.8374C28.6211 18.725 31.6959 15.6546 36.0007 15.6546"
+                                fill="white"></path>
+                            <path
+                                d="M43.6523 15.9382H47.4204V21.6056H47.5398L52.4974 15.9382H56.8004L50.7719 22.5896L57.3161 29.7136H52.7548L47.5398 23.9276H47.4204V29.7136H43.6523V15.9382Z"
+                                fill="white"></path>
+                            <path
+                                d="M57.5586 15.9382H61.3266V24.026H61.4452L67.3155 15.9382H71.0835V29.7136H67.3155V21.6258H67.1969L61.3266 29.7136H57.5586V15.9382Z"
+                                fill="white"></path>
+                            <path
+                                d="M82.5065 13.6753H75.6646C76.0617 15.1688 77.1721 16.2336 79.0952 16.2336C81.0385 16.2336 82.1885 15.1714 82.5065 13.6753ZM72.2734 15.9384H76.0414V24.0261H76.16L82.0304 15.9384H85.7984V29.7137H82.0304V21.626H81.9118L76.0414 29.7137H72.2734V15.9384Z"
+                                fill="white"></path>
+                            <path
+                                d="M10.7883 21.38C10.4712 19.8865 9.32119 18.8217 7.37701 18.8217C5.45391 18.8217 4.34257 19.8847 3.94635 21.38H10.7883ZM7.37964 15.6528C11.8601 15.6528 14.6178 18.8603 14.6178 22.8357C14.6192 23.1057 14.5992 23.3753 14.5581 23.6422H3.80754C3.98325 25.3738 5.23515 26.8304 7.37701 26.8304C8.78265 26.8304 9.49865 26.4368 9.99502 26.0239C10.2616 25.7982 10.4836 25.5247 10.6495 25.2174H14.5361C14.2289 26.1076 13.7515 26.9297 13.1305 27.6377C12.0569 28.8158 10.3122 29.9992 7.37964 29.9992C3.03707 29.9992 0 26.9296 0 22.8366C0 18.8226 2.91496 15.6537 7.37964 15.6537"
+                                fill="white"></path>
+                            <path
+                                d="M67.1198 0.304951V2.03653H67.0082C66.3721 0.945399 64.6977 0.00976562 62.8923 0.00976562C59.0057 0.00976562 56.3086 3.17774 56.3086 7.19262C56.3086 11.1873 59.0057 14.3553 62.8923 14.3553C64.6731 14.3553 66.3634 13.4952 67.002 12.368H67.1198V14.0803H70.8878V0.304951H67.1198ZM63.6856 11.1873C61.4445 11.1873 60.0766 9.69379 60.0766 7.19262C60.0766 4.67387 61.4453 3.17774 63.6856 3.17774C65.9258 3.17774 67.2955 4.67387 67.2955 7.19262C67.2955 9.69203 65.9267 11.1873 63.6865 11.1873"
+                                fill="white"></path>
+                            <path
+                                d="M37.7655 5.54967C36.2589 5.21495 35.0887 4.8609 35.0887 4.07374C35.0887 3.58176 35.5648 3.07046 37.032 3.10736C37.9439 3.12668 38.6775 3.50094 39.035 3.81545C39.4131 4.15676 39.6921 4.59384 39.8424 5.08053H43.6253C43.4062 4.00793 42.9262 3.00585 42.2276 2.16294C41.2761 1.02349 39.7686 0 37.032 0C33.2842 0 31.1221 2.02677 31.1221 4.27053C31.1221 6.73041 33.2042 7.67483 35.3663 8.22391C37.4686 8.75103 39.5507 9.0506 39.5507 10.0934C39.5507 10.6838 38.9559 11.2742 37.4291 11.254C36.1991 11.2346 35.4656 10.8604 35.0491 10.4475C34.811 10.2111 34.3946 9.54258 34.2954 9.01107H30.5273C30.703 10.0732 31.34 11.3919 31.9154 12.0806C32.9266 13.2807 34.5334 14.3648 37.4282 14.3648C41.4694 14.3648 43.5164 12.2195 43.5164 9.8975C43.5164 6.82793 40.2052 6.11983 37.7655 5.54879"
+                                fill="white"></path>
+                        </svg></a></div>
+                <div class="header__city">
+                    <div class="search-block"><svg width="20" height="23" viewBox="0 0 20 23" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.2782 16.6128L19.681 21.0578C20.1092 21.4902 20.1059 22.188 19.6735 22.6162C19.2411 23.0445 18.5434 23.0412 18.1151 22.6088L13.3946 17.843C12.1629 18.4489 10.7788 18.789 9.31554 18.789C4.16833 18.789 0 14.5806 0 9.39451C0 4.20841 4.16833 0 9.31554 0C9.92415 0 10.4175 0.493375 10.4175 1.10198C10.4175 1.71059 9.92415 2.20397 9.31554 2.20397C5.3903 2.20397 2.20397 5.42094 2.20397 9.39451C2.20397 13.3681 5.3903 16.5851 9.31554 16.5851C13.2408 16.5851 16.4271 13.3681 16.4271 9.39451C16.4271 7.24195 15.4876 5.24732 13.8899 3.88865C13.4262 3.49439 13.37 2.79892 13.7643 2.33528C14.1585 1.87165 14.854 1.81541 15.3177 2.20968C17.4035 3.98342 18.6311 6.58969 18.6311 9.39451C18.6311 12.2947 17.3275 14.8891 15.2782 16.6128Z"
+                                fill="rgba(0,0,0,.5)"></path>
+                        </svg><input type="text" placeholder="Поиск"><button></button></div>
+                    <div class="select-city" role="button" tabindex="1">
+                        <div class="select-city__list"><a class="select-city__item" href="https://msk.dostaevsky.ru"
+                                data-city="">Москва</a><a class="select-city__item" href="https://dostaevsky.ru"
+                                data-city="selected">Санкт-Петербург</a><a class="select-city__item"
+                                href="https://sochi.dostaevsky.ru" data-city="">Сочи</a><a class="select-city__item"
+                                href="https://krd.dostaevsky.ru" data-city="">Краснодар</a><a class="select-city__item"
+                                href="https://nsk.dostaevsky.ru" data-city="">Новосибирск</a></div>
+                    </div>
+                </div>
+                <div class="header__contacts"><a class="header__phone" href="tel:+7812777-80-08">8 (812)
+                        777-80-08</a>
+                    <div class="header__schedule"> 24/7 </div>
+                </div>
+                <div class="header__contactus contact-us" data-bcall="">
+                    <div class="contact-us__text">Связаться с нами</div>
+                    <div class="contact-us__drop"><a href="https://t.me/Dostahelp_bot" target="_blank"
+                            class="contact-us__social"><img src="/files/images/icn-telegram_circle.svg"
+                                alt="telegram"></a><a href="https://api.whatsapp.com/send?phone=78127778008"
+                            target="_blank" class="contact-us__social"><img src="/files/images/icn-whatsup__circle.svg"
+                                alt="whatsup"></a><a href="javascript:void(0);" class="contact-us__social"
+                            data-type="chat"><img src="/files/images/icn-chat__circle.svg" alt="chat"></a></div>
+                </div>
+                <div class="header__basket"><button class="profile-proceed authorization-button modal-toggle"
+                        type="button" title="Войти в личный кабинет" data-modal-toggle="auth" data-auth="false">
+                        <div class="authorization-button__icon"></div><span class="authorization-button__text">
+                            Войти
+                        </span>
+                    </button>
+                    <div class="catalog-cart catalog-cart_mobile catalog-cart_added"><button
+                            class="cart-proceed modal-toggle catalog-cart__button" type="button" title="Открыть корзину"
+                            data-modal-toggle="cart" data-href="#cart">
+                            <div class="catalog-cart__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1 8.02409L3.93041 18.9992H16.0707L19.0011 8.02409M1 8.02409H19.0011M1 8.02409L7.69807 1M19.0011 8.02409L12.303 1"
+                                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                    <path d="M7.69812 12.0971V15.0482M12.303 12.0971V15.0482" stroke="white"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            <div class="catalog-cart__info">
+                                <div class="catalog-cart__price"><span class="catalog-cart__price-count">0</span><span
+                                        class="catalog-cart__price-currency">&nbsp;<label class="rub">i</label></span>
+                                </div>
+                                <div class="catalog-cart__quantity"><span class="catalog-cart__count">0</span><span
+                                        class="catalog-cart__pieces">шт.</span></div>
+                            </div>
+                        </button></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main main__fixed">
+            <aside class="main__nav">
+                <nav class="main-nav" style="position: relative; transform: translate3d(0px, 0px, 0px);">
+                    <div class="main-nav__container">
+                        <div class="main-nav__main-menu">
+                            <div class="main-nav__city">
+                                <div class="city-confirm" style="display: none;">
+                                    <div class="city-confirm__container">
+                                        <div class="city-confirm__title">Ваш город — Санкт-Петербург?</div>
+                                        <div class="city-confirm__controls">
+                                            <button type="button" class="city-confirm__btn city-confirm__btn_confirm">
+                                                Да </button>
+                                            <div class="wrapped-in-button-desktop">
+                                                <div class="select-city" role="button" tabindex="1">
+                                                    <button type="button" class="city-confirm__btn"> Нет, выбрать
+                                                        город</button>
+                                                    <div class="select-city__list"><a class="select-city__item"
+                                                            href="https://msk.dostaevsky.ru">Москва</a><a
+                                                            class="select-city__item" href="https://dostaevsky.ru"
+                                                            data-city="selected">Санкт-Петербург</a><a
+                                                            class="select-city__item" href="https://sochi.dostaevsky.ru"
+                                                            data-city="">Сочи</a><a class="select-city__item"
+                                                            href="https://krd.dostaevsky.ru"
+                                                            data-city="">Краснодар</a><a class="select-city__item"
+                                                            href="https://nsk.dostaevsky.ru"
+                                                            data-city="">Новосибирск</a></div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="city-confirm__btn modal-toggle"
+                                                style="display: none"> Нет, я в
+                                                другом городе </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="select-city" role="button" tabindex="1">
+                                    <div class="select-city__list"><a class="select-city__item"
+                                            href="https://msk.dostaevsky.ru/" data-city="">Москва</a><a
+                                            class="select-city__item" href="https://dostaevsky.ru/"
+                                            data-city="selected">Санкт-Петербург</a><a class="select-city__item"
+                                            href="https://sochi.dostaevsky.ru/" data-city="">Сочи</a><a
+                                            class="select-city__item" href="https://krd.dostaevsky.ru/"
+                                            data-city="">Краснодар</a><a class="select-city__item"
+                                            href="https://nsk.dostaevsky.ru/" data-city="">Новосибирск</a></div>
+                                </div>
+                            </div>
+                            <div class="main-nav__section search-block-nav">
+                                <div class="mobile-search-block">
+                                    <svg width="20" height="23" viewBox="0 0 20 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.2782 16.6128L19.681 21.0578C20.1092 21.4902 20.1059 22.188 19.6735 22.6162C19.2411 23.0445 18.5434 23.0412 18.1151 22.6088L13.3946 17.843C12.1629 18.4489 10.7788 18.789 9.31554 18.789C4.16833 18.789 0 14.5806 0 9.39451C0 4.20841 4.16833 0 9.31554 0C9.92415 0 10.4175 0.493375 10.4175 1.10198C10.4175 1.71059 9.92415 2.20397 9.31554 2.20397C5.3903 2.20397 2.20397 5.42094 2.20397 9.39451C2.20397 13.3681 5.3903 16.5851 9.31554 16.5851C13.2408 16.5851 16.4271 13.3681 16.4271 9.39451C16.4271 7.24195 15.4876 5.24732 13.8899 3.88865C13.4262 3.49439 13.37 2.79892 13.7643 2.33528C14.1585 1.87165 14.854 1.81541 15.3177 2.20968C17.4035 3.98342 18.6311 6.58969 18.6311 9.39451C18.6311 12.2947 17.3275 14.8891 15.2782 16.6128Z"
+                                            fill="rgba(0,0,0,.5)"></path>
+                                    </svg>
+                                    <input type="text" placeholder="Поиск">
+                                    <div class="search-cross"></div>
+                                </div>
+                                <div class="mobile-search-results"></div>
+                            </div>
+                            <div class="main-nav__section main-nav__section_mobile main-nav__section_not-border"><button
+                                    class="profile-proceed modal-toggle main-nav__sidemenu-button main-nav__login authorization-button"><span>Привет!</span><span>Войти</span></button>
+                            </div>
+                            <div class="main-nav__box">
+                                <div class="main-nav__section main-nav__section_accent">
+                                    <a class="main-nav__link main-nav__link_promo" href="/promo">Акции</a></div>
+                            </div>
+                            <ul class="main-nav__list">
+                                <li class="main-nav__item"><a class="main-nav__link" href="/pizza">Пицца</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link" href="/pies">Пироги</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link" href="/sets-sushi-rolls">Суши и
+                                        роллы</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link" href="/streetfood">Стритфуд</a>
+                                </li>
+                                <li class="main-nav__item"><a class="main-nav__link" href="/combo-sets">Комбо и сеты</a>
+                                </li>
+                                <li class="main-nav__item"><a class="main-nav__link" href="/bowls">Боулы</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link" href="/woks">Wok</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link" href="/starters">Салаты и
+                                        закуски</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link" href="/soups">Супы</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link" href="/desserts">Десерты</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link" href="/drinks">Напитки</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link" href="/sauces">Соусы</a></li>
+                            </ul>
+                            <div class="main-nav__box main-nav__box--bottom">
+                                <div class="main-nav__section main-nav__section_breakfast">
+                                    <a class="main-nav__link" href="/main-dishes">Горячие блюда</a>
+                                </div>
+                                <div class="main-nav__section main-nav__section_breakfast">
+                                    <a class="main-nav__link" href="/breakfast">Завтраки</a>
+                                </div>
+                            </div>
+                            <div class="custom__nav">
+                                <ul class="compilations">
+                                    <li class="new-custom__nav">
+                                        <a href="/new">
+                                            <img src="files/images/866d62c46d0849a3a4f774baaec3c491.png">
+                                            Новинки
+                                        </a>
+                                    </li>
+                                    <li class="lunch-custom__nav"><a href="/lunch">
+                                            <span>
+                                                <img src="files/images/47e77222217e48a58146ebe37b1c0684.png"></span>
+                                            Обед
+                                        </a>
+                                    </li>
+                                    <li class="for-kids-custom__nav">
+                                        <a href="/for-kids">
+                                            <span>
+                                                <img src="files/images/c7ecaa9b9b074e94b338b8d2ef04fabb.png"></span>
+                                            Детям
+                                        </a>
+                                    </li>
+                                    <li class="shrimps-custom__nav">
+                                        <a href="/shrimps">
+                                            <span>
+                                                <img src="files/images/d595438a93914f36a2d4ff083aa3ae00.png"></span>
+                                            Креветки
+                                        </a>
+                                    </li>
+                                    <li class="light-custom__nav"><a href="/light"><span><img
+                                                    src="files/images/e8300ac1171e49fbb6bc3a1e54ae59a2.png"></span>
+                                            Лайт </a></li>
+                                    <li class="hearty-custom__nav"><a href="/hearty"><span><img
+                                                    src="files/images/5d8218422c944365b452f73bd132c446.png"></span>
+                                            Сытно </a></li>
+                                    <li class="salmon-custom__nav"><a href="/salmon"><span><img
+                                                    src="files/images/4f4caa759ac2454985306d04187dff50.png"></span>
+                                            Лосось </a></li>
+                                    <li class="vegetarian-menu-custom__nav"><a href="/vegetarian-menu"><span><img
+                                                    src="files/images/87eaabf396b7417696f0c61f78ab0517.png"></span>
+                                            Веджи </a></li>
+                                </ul>
+                            </div>
+                            <div class="main-nav__secondry-nav">
+                                <div class="secondary-nav"><a href="/our-company">
+                                        <div class="secondary-nav__title">Компания</div>
+                                    </a>
+                                    <ul class="secondary-nav__list">
+                                        <li class="secondary-nav__item"><a class="secondary-nav__link"
+                                                href="/our-kitchen">Наша кухня</a></li>
+                                        <li class="secondary-nav__item"><a class="secondary-nav__link"
+                                                href="/shipping">Доставка</a></li>
+                                        <li class="secondary-nav__item"><a class="secondary-nav__link"
+                                                href="/payment">Оплата</a></li>
+                                        <li class="secondary-nav__item"><a class="secondary-nav__link"
+                                                href="/contacts">Контакты</a></li>
+                                        <li class="secondary-nav__item"><a class="secondary-nav__link" href=""
+                                                target="_blank">Франшиза</a>
+                                        </li>
+                                        <li class="secondary-nav__item"><a class="secondary-nav__link"
+                                                href="/reviews">Отзывы</a></li>
+                                        <li class="secondary-nav__item"><a class="secondary-nav__link"
+                                                href="">Вакансии</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="main-nav__footer">
+                                <li class="main-nav__item"><a class="main-nav__link main-nav__link_small"
+                                        href="/user-agreement">Пользовательское соглашение</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link main-nav__link_small"
+                                        href="/license-agreement">Лицензионное соглашение</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link main-nav__link_small"
+                                        href="/sitemap">Карта сайта</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link main-nav__link_small"
+                                        target="_blank" rel="nofollow" href="">Юридическое
+                                        меню</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </aside>
+            <div class="main__fixed__content">
+                <main class="main__content">
+                    <div class="search-results" style="display: none;"></div>
+                    <div class="slider slider_large">
+                        <div class="slider__content">
+                            <div class="swiper-container swiper-container-horizontal">
+                                <div class="swiper-wrapper"
+                                    style="transform: translate3d(-4080px, 0px, 0px); transition-duration: 0ms;"><a
+                                        class="swiper-slide swiper-slide-duplicate" href="" target="_blank"
+                                        data-swiper-slide-index="6" style="width: 1020px;">
+                                        <picture>
+                                            <source srcset="/files/images/b457ba44dc4b58db7338edab6e98491d.jpg"
+                                                media="(max-width: 736px)"><img title="Горячие блюда СПБ"
+                                                alt="Акция в Достаевском &quot;Горячие блюда СПБ&quot;"
+                                                srcset="/files/images/5848931088d47b864af2f5908b391794.jpg">
+                                        </picture>
+                                        <div class="slide-content-wrapper">
+                                            <div class="slide-content"></div>
+                                        </div>
+                                    </a>
+                                    <div class="swiper-slide" data-swiper-slide-index="0" style="width: 1020px;">
+                                        <picture>
+                                            <source srcset="/files/images/085bbfdbbda261fc0478f051599190a6.jpg"
+                                                media="(max-width: 736px)">
+                                            <img title="Доставка СПб" alt="Акция в Достаевском &quot;Доставка СПб&quot;"
+                                                srcset="/files/images/5513efb89d2977611c7bfd1a96539686.jpg">
+                                        </picture>
+                                        <div class="slide-content-wrapper">
+                                            <div class="slide-content">
+                                                <h1>Доставка еды в Санкт-Петербурге</h1>
+                                            </div>
+                                        </div>
+                                    </div><a class="swiper-slide" href="/desserts/raspberry-dessert"
+                                        data-swiper-slide-index="1" style="width: 1020px;">
+                                        <picture>
+                                            <source srcset="/files/images/6811fb85fda3b29653b1133b06003556.jpg"
+                                                media="(max-width: 736px)"><img title="Малиновый пломбир СПБ"
+                                                alt="Акция в Достаевском &quot;Малиновый пломбир СПБ&quot;"
+                                                srcset="/files/images/3a3d96d2c3fde496c7383ad622f2a238.jpg">
+                                        </picture>
+                                        <div class="slide-content-wrapper">
+                                            <div class="slide-content"></div>
+                                        </div>
+                                    </a><a class="swiper-slide js-seo-hide swiper-slide-prev" href="#"
+                                        data-href="L3BpenphL25ldw==" data-swiper-slide-index="2" style="width: 1020px;">
+                                        <picture>
+                                            <source srcset="/files/images/a6f6868db7e883151f75ec8d453f1d4d.jpg"
+                                                media="(max-width: 736px)"><img title="Супермясная СПб"
+                                                alt="Акция в Достаевском &quot;Супермясная СПб&quot;"
+                                                srcset="/files/images/e0085239f5a641f36396ad63a3b039f9.jpg">
+                                        </picture>
+                                        <div class="slide-content-wrapper">
+                                            <div class="slide-content"></div>
+                                        </div>
+                                    </a><a class="swiper-slide js-seo-hide swiper-slide-active" href="#"
+                                        data-href="L3BpenphL25ldw==" data-swiper-slide-index="3" style="width: 1020px;">
+                                        <picture>
+                                            <source srcset="/files/images/c0020f92845221cf68723850a2c371aa.jpeg"
+                                                media="(max-width: 736px)"><img title="Сливочная пепперони СПб"
+                                                alt="Акция в Достаевском &quot;Сливочная пепперони СПб&quot;"
+                                                srcset="/files/images/bdc292ddeca6aca19b7bc820326019a6.jpeg">
+                                        </picture>
+                                        <div class="slide-content-wrapper">
+                                            <div class="slide-content"></div>
+                                        </div>
+                                    </a><a class="swiper-slide swiper-slide-next" href="/combo-sets/uni"
+                                        data-swiper-slide-index="4" style="width: 1020px;">
+                                        <picture>
+                                            <source srcset="/files/images/09a104fa4bedff1c461d8053b0179c86.jpg"
+                                                media="(max-width: 736px)"><img title="Комбо уни СПб"
+                                                alt="Акция в Достаевском &quot;Комбо уни СПб&quot;"
+                                                srcset="/files/images/82311582284d34620317deac8ad86459.jpg">
+                                        </picture>
+                                        <div class="slide-content-wrapper">
+                                            <div class="slide-content"></div>
+                                        </div>
+                                    </a><a class="swiper-slide" href="https://dostaevsky.ru/combo-sets/snack-box"
+                                        target="_blank" data-swiper-slide-index="5" style="width: 1020px;">
+                                        <picture>
+                                            <source srcset="/files/images/0a2481f90b9187c227c4a32f798f30d4.jpg"
+                                                media="(max-width: 736px)"><img title="Снэк-бокс СПб"
+                                                alt="Акция в Достаевском &quot;Снэк-бокс СПб&quot;"
+                                                srcset="/files/images/689ce3905e4943314f88c8761c87956f.jpg">
+                                        </picture>
+                                        <div class="slide-content-wrapper">
+                                            <div class="slide-content"></div>
+                                        </div>
+                                    </a><a class="swiper-slide" href="https://dostaevsky.ru/main-dishes" target="_blank"
+                                        data-swiper-slide-index="6" style="width: 1020px;">
+                                        <picture>
+                                            <source srcset="/files/images/b457ba44dc4b58db7338edab6e98491d.jpg"
+                                                media="(max-width: 736px)"><img title="Горячие блюда СПБ"
+                                                alt="Акция в Достаевском &quot;Горячие блюда СПБ&quot;"
+                                                srcset="/files/images/5848931088d47b864af2f5908b391794.jpg">
+                                        </picture>
+                                        <div class="slide-content-wrapper">
+                                            <div class="slide-content"></div>
+                                        </div>
+                                    </a>
+                                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0"
+                                        style="width: 1020px;">
+                                        <picture>
+                                            <source srcset="/files/images/085bbfdbbda261fc0478f051599190a6.jpg"
+                                                media="(max-width: 736px)"><img title="Доставка СПб"
+                                                alt="Акция в Достаевском &quot;Доставка СПб&quot;"
+                                                srcset="/files/images/5513efb89d2977611c7bfd1a96539686.jpg">
+                                        </picture>
+                                        <div class="slide-content-wrapper">
+                                            <div class="slide-content">
+                                                <h1>Доставка еды в Санкт-Петербурге</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                                    <span class="swiper-pagination-bullet "></span><span
+                                        class="swiper-pagination-bullet"></span><span
+                                        class="swiper-pagination-bullet"></span><span
+                                        class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
+                                        class="swiper-pagination-bullet"></span><span
+                                        class="swiper-pagination-bullet"></span><span
+                                        class="swiper-pagination-bullet"></span></div>
+                                <div class="swiper-button-next swiper-button-white"></div>
+                                <div class="swiper-button-prev swiper-button-white"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="dummy-cover" style="display: none;"></div>
+                        <div class="search-cover" style="display: none;"></div>
+                        <div class="dummy-container" style="display: none;">
+                            <div class="dummy__info">
+                                <div class="dummy__img-wrap"><img src="/files/images/icn-info.svg" alt=""></div>
+                                <div class="dummy__title"></div>
+                                <div class="dummy__text"></div>
+                                <div class="dummy__controls"><button onclick="hideDummy()"></button></div>
+                            </div>
+                        </div>
+                        <div class="info" style="display: none;">
+                            <div class="info-left">
+                                <div class="info__image-wrap info__image-wrap_alert"><img
+                                        src="/files/images/icn-speaker.svg" alt=""></div>
+                                <div class="info__content">
+                                    <div class="info-title"></div>
+                                    <div class="info-text"></div>
+                                </div>
+                            </div>
+                            <div class="info-button"><button onclick="hideInfo()"></button></div>
+                        </div>
+
+                        <div class="category">
+                            <div class="category__container"><a href="/main-dishes" class="category__item">
+                                    <div class="category__content" style="background-color:#2F693C;">
+                                        <div class="category__image category__image_loaded catalog-item__image_loaded">
+                                            <div class="lazy-image"
+                                                data-image="/files/images/gorjachie-bljuda-medium-866db824023444ed8c9c768a1021ccb9.jpeg"
+                                                data-title="Горячие блюда" data-alt="Горячие блюда - Достаевский"><img
+                                                    class="lazy-image__img lazy-image__img_small"
+                                                    src="/files/images/gorjachie-bljuda-extrasmall-866db824023444ed8c9c768a1021ccb9.jpeg"
+                                                    alt="Горячие блюда - Достаевский" title="Горячие блюда "><img
+                                                    src="/files/images/gorjachie-bljuda-medium-866db824023444ed8c9c768a1021ccb9.jpeg"
+                                                    alt="Горячие блюда - Достаевский" title="Горячие блюда"
+                                                    class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                            </div>
+                                        </div>
+                                        <div class="category__name">Горячие блюда</div>
+                                    </div>
+                                </a><a href="/breakfast" class="category__item">
+                                    <div class="category__content" style="background-color:#FFB09F;">
+                                        <div class="category__image category__image_loaded catalog-item__image_loaded">
+                                            <div class="lazy-image"
+                                                data-image="/files/images/zavtraki-medium-4b0d16d070d74d98bf32476984d72063.jpeg"
+                                                data-title="Завтраки" data-alt="Завтраки - Достаевский"><img
+                                                    class="lazy-image__img lazy-image__img_small"
+                                                    src="/files/images/zavtraki-extrasmall-4b0d16d070d74d98bf32476984d72063.jpeg"
+                                                    alt="Завтраки - Достаевский" title="Завтраки "><img
+                                                    src="/files/images/zavtraki-medium-4b0d16d070d74d98bf32476984d72063.jpeg"
+                                                    alt="Завтраки - Достаевский" title="Завтраки"
+                                                    class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                            </div>
+                                        </div>
+                                        <div class="category__name">Завтраки</div>
+                                    </div>
+                                </a><a href="/pizza" class="category__item">
+                                    <div class="category__content" style="background-color:#D5CD6A;">
+                                        <div class="category__image category__image_loaded catalog-item__image_loaded">
+                                            <div class="lazy-image"
+                                                data-image="/files/images/picca-medium-0f97ab75724646778332de258489a671.jpeg"
+                                                data-title="Пицца" data-alt="Пицца - Достаевский"><img
+                                                    class="lazy-image__img lazy-image__img_small"
+                                                    src="/files/images/picca-extrasmall-0f97ab75724646778332de258489a671.jpeg"
+                                                    alt="Пицца - Достаевский" title="Пицца "><img
+                                                    src="/files/images/picca-medium-0f97ab75724646778332de258489a671.jpeg"
+                                                    alt="Пицца - Достаевский" title="Пицца"
+                                                    class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                            </div>
+                                        </div>
+                                        <div class="category__name">Пицца</div>
+                                    </div>
+                                </a><a href="/pies" class="category__item">
+                                    <div class="category__content" style="background-color:#BF5D5E;">
+                                        <div class="category__image category__image_loaded catalog-item__image_loaded">
+                                            <div class="lazy-image"
+                                                data-image="/files/images/pirogi-medium-20ab4fb554cd4348b479fa769d40ba5f.jpeg"
+                                                data-title="Пироги" data-alt="Пироги - Достаевский"><img
+                                                    class="lazy-image__img lazy-image__img_small"
+                                                    src="/files/images/pirogi-extrasmall-20ab4fb554cd4348b479fa769d40ba5f.jpeg"
+                                                    alt="Пироги - Достаевский" title="Пироги "><img
+                                                    src="/files/images/pirogi-medium-20ab4fb554cd4348b479fa769d40ba5f.jpeg"
+                                                    alt="Пироги - Достаевский" title="Пироги"
+                                                    class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                            </div>
+                                        </div>
+                                        <div class="category__name">Пироги</div>
+                                    </div>
+                                </a><a href="/sets-sushi-rolls" class="category__item">
+                                    <div class="category__content" style="background-color:#716969;">
+                                        <div class="category__image category__image_loaded catalog-item__image_loaded">
+                                            <div class="lazy-image"
+                                                data-image="/files/images/sushi-medium-555a4c98789d4f5794f4bbdb70ff1a74.jpeg"
+                                                data-title="Суши и роллы" data-alt="Суши и роллы - Достаевский"><img
+                                                    class="lazy-image__img lazy-image__img_small"
+                                                    src="/files/images/sushi-extrasmall-555a4c98789d4f5794f4bbdb70ff1a74.jpeg"
+                                                    alt="Суши и роллы - Достаевский" title="Суши и роллы "><img
+                                                    src="/files/images/sushi-medium-555a4c98789d4f5794f4bbdb70ff1a74.jpeg"
+                                                    alt="Суши и роллы - Достаевский" title="Суши и роллы"
+                                                    class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                            </div>
+                                        </div>
+                                        <div class="category__name">Суши и роллы</div>
+                                    </div>
+                                </a></div>
+                            <div class="category__container"><a href="/streetfood"
+                                    class="category__item category__item_small">
+                                    <div class="category__content">
+                                        <div class="category__image category__image_loaded catalog-item__image_loaded">
+                                            <div class="lazy-image"
+                                                data-image="/files/images/stritfud-medium-f2b3ef4e1b9147b6bd5891a7cc77a6de.jpeg">
+                                                <img class="lazy-image__img lazy-image__img_small"
+                                                    src="/files/images/stritfud-extrasmall-f2b3ef4e1b9147b6bd5891a7cc77a6de.jpeg"
+                                                    alt="Стритфуд - Достаевский" title="Стритфуд "><img
+                                                    src="/files/images/stritfud-medium-f2b3ef4e1b9147b6bd5891a7cc77a6de.jpeg"
+                                                    alt="undefined" title="undefined"
+                                                    class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                            </div>
+                                        </div>
+                                        <div class="category__name">Стритфуд</div>
+                                    </div>
+                                </a><a href="/combo-sets" class="category__item category__item_small">
+                                    <div class="category__content">
+                                        <div class="category__image category__image_loaded catalog-item__image_loaded">
+                                            <div class="lazy-image"
+                                                data-image="/files/images/kombo-medium-e8ac561f288a485f96bf8124a2268f62.jpeg">
+                                                <img class="lazy-image__img lazy-image__img_small"
+                                                    src="/files/images/kombo-extrasmall-e8ac561f288a485f96bf8124a2268f62.jpeg"
+                                                    alt="Комбо и сеты - Достаевский" title="Комбо и сеты "><img
+                                                    src="/files/images/kombo-medium-e8ac561f288a485f96bf8124a2268f62.jpeg"
+                                                    alt="undefined" title="undefined"
+                                                    class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                            </div>
+                                        </div>
+                                        <div class="category__name">Комбо и сеты</div>
+                                    </div>
+                                </a><a href="/bowls" class="category__item category__item_small">
+                                    <div class="category__content">
+                                        <div class="category__image category__image_loaded catalog-item__image_loaded">
+                                            <div class="lazy-image"
+                                                data-image="/files/images/bouly-medium-3066beb4720d49ca81a8c165ddd3bf53.jpeg">
+                                                <img class="lazy-image__img lazy-image__img_small"
+                                                    src="/files/images/bouly-extrasmall-3066beb4720d49ca81a8c165ddd3bf53.jpeg"
+                                                    alt="Боулы - Достаевский" title="Боулы "><img
+                                                    src="/files/images/bouly-medium-3066beb4720d49ca81a8c165ddd3bf53.jpeg"
+                                                    alt="undefined" title="undefined"
+                                                    class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                            </div>
+                                        </div>
+                                        <div class="category__name">Боулы</div>
+                                    </div>
+                                </a><a href="/woks" class="category__item category__item_small">
+                                    <div class="category__content">
+                                        <div class="category__image category__image_loaded catalog-item__image_loaded">
+                                            <div class="lazy-image"
+                                                data-image="/files/images/wok-medium-7368cc8113984e6a862c35ce30ee4495.jpeg">
+                                                <img class="lazy-image__img lazy-image__img_small"
+                                                    src="/files/images/wok-extrasmall-7368cc8113984e6a862c35ce30ee4495.jpeg"
+                                                    alt="Wok - Достаевский" title="Wok "><img
+                                                    src="/files/images/wok-medium-7368cc8113984e6a862c35ce30ee4495.jpeg"
+                                                    alt="undefined" title="undefined"
+                                                    class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                            </div>
+                                        </div>
+                                        <div class="category__name">Wok</div>
+                                    </div>
+                                </a><a href="/starters" class="category__item category__item_small">
+                                    <div class="category__content">
+                                        <div class="category__image category__image_loaded catalog-item__image_loaded">
+                                            <div class="lazy-image"
+                                                data-image="/files/images/salaty-i-zakuski-medium-1aa92c20206f47b1a5e197799ef552d8.jpeg">
+                                                <img class="lazy-image__img lazy-image__img_small"
+                                                    src="/files/images/salaty-i-zakuski-extrasmall-1aa92c20206f47b1a5e197799ef552d8.jpeg"
+                                                    alt="Салаты и закуски - Достаевский" title="Салаты и закуски "><img
+                                                    src="/files/images/salaty-i-zakuski-medium-1aa92c20206f47b1a5e197799ef552d8.jpeg"
+                                                    alt="undefined" title="undefined"
+                                                    class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                            </div>
+                                        </div>
+                                        <div class="category__name">Салаты и закуски</div>
+                                    </div>
+                                </a><a href="/soups" class="category__item category__item_small">
+                                    <div class="category__content">
+                                        <div class="category__image category__image_loaded catalog-item__image_loaded">
+                                            <div class="lazy-image"
+                                                data-image="/files/images/supy-medium-bce93f3a62d0460b9518c7d3539e1f5d.jpeg">
+                                                <img class="lazy-image__img lazy-image__img_small"
+                                                    src="/files/images/supy-extrasmall-bce93f3a62d0460b9518c7d3539e1f5d.jpeg"
+                                                    alt="Супы - Достаевский" title="Супы "><img
+                                                    src="/files/images/supy-medium-bce93f3a62d0460b9518c7d3539e1f5d.jpeg"
+                                                    alt="undefined" title="undefined"
+                                                    class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                            </div>
+                                        </div>
+                                        <div class="category__name">Супы</div>
+                                    </div>
+                                </a><a href="/desserts" class="category__item category__item_small">
+                                    <div class="category__content">
+                                        <div class="category__image category__image_loaded catalog-item__image_loaded">
+                                            <div class="lazy-image"
+                                                data-image="/files/images/deserty-medium-1ae34fd3dcfd4b0ea90a277ff324eade.jpeg">
+                                                <img class="lazy-image__img lazy-image__img_small"
+                                                    src="/files/images/deserty-extrasmall-1ae34fd3dcfd4b0ea90a277ff324eade.jpeg"
+                                                    alt="Десерты - Достаевский" title="Десерты "><img
+                                                    src="/files/images/deserty-medium-1ae34fd3dcfd4b0ea90a277ff324eade.jpeg"
+                                                    alt="undefined" title="undefined"
+                                                    class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                            </div>
+                                        </div>
+                                        <div class="category__name">Десерты</div>
+                                    </div>
+                                </a><a href="/drinks" class="category__item category__item_small">
+                                    <div class="category__content">
+                                        <div class="category__image category__image_loaded catalog-item__image_loaded">
+                                            <div class="lazy-image"
+                                                data-image="/files/images/napitki-medium-61e7ea89b14e410b9d219d20441527ea.jpeg">
+                                                <img class="lazy-image__img lazy-image__img_small"
+                                                    src="/files/images/napitki-extrasmall-61e7ea89b14e410b9d219d20441527ea.jpeg"
+                                                    alt="Напитки - Достаевский" title="Напитки "><img
+                                                    src="/files/images/napitki-medium-61e7ea89b14e410b9d219d20441527ea.jpeg"
+                                                    alt="undefined" title="undefined"
+                                                    class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                            </div>
+                                        </div>
+                                        <div class="category__name">Напитки</div>
+                                    </div>
+                                </a><a href="/sauces" class="category__item category__item_small">
+                                    <div class="category__content">
+                                        <div class="category__image category__image_loaded catalog-item__image_loaded">
+                                            <div class="lazy-image"
+                                                data-image="/files/images/dopolnitelno-medium-ce5721f6660947e6b79f7087a86614de.jpeg">
+                                                <img class="lazy-image__img lazy-image__img_small"
+                                                    src="/files/images/dopolnitelno-extrasmall-ce5721f6660947e6b79f7087a86614de.jpeg"
+                                                    alt="Соусы - Достаевский" title="Соусы "><img
+                                                    src="/files/images/dopolnitelno-medium-ce5721f6660947e6b79f7087a86614de.jpeg"
+                                                    alt="undefined" title="undefined"
+                                                    class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                            </div>
+                                        </div>
+                                        <div class="category__name">Соусы</div>
+                                    </div>
+                                </a></div>
+                        </div>
+                        <div class="popular-products">
+                            <div class="popular-products__title">
+                                <div class="title-secondary">Популярное</div>
+                            </div>
+                            <div class="popular-products__list">
+                                <div class="catalog-list">
+                                    <div class="catalog-list__item">
+                                        <div class="catalog-item">
+                                            <a href="/pizza/colorado-pizza"
+                                                class="catalog-item__image catalog-item__image_loaded">
+                                                <div class="overimage" style="display: none">
+                                                    <div>Добавлено 0 <br> в корзину </div>
+                                                </div>
+                                                <img src="/files/images/picca-kolorado-30-sm-medium-rectangular-9245479d988e41b3a54b2aac47f8af42.jpeg"
+                                                    alt="Пицца «Колорадо» 30 см">
+                                            </a>
+                                            <a class="catalog-item__info catalog-item__info-link" data-fetch="true"
+                                                href="/pizza/colorado-pizza">
+                                                <div class="catalog-item__desc">
+                                                    <div class="catalog-item__title">Пицца «Колорадо» 30 см</div>
+                                                </div>
+                                                <div class="catalog-item__footer">
+                                                    <div class="catalog-item__weight">610 г</div>
+                                                    <div class="catalog-item__price"><button
+                                                            class="catalog-item__add-to-cart" type="button"
+                                                            data-modal-toggle="warning" title="Добавить в корзину"> +
+                                                            579<span><label class="rub">i</label></span></button>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                    <div class="catalog-list__item" data-catalog-product="true" data-type=""
+                                        data-price="619.00" data-name="Пицца «Барбекю» 30 см"
+                                        data-category-title="Пицца/На традиционном тесте" data-class="" data-id="10309">
+
+                                        <div class="catalog-item">
+                                            <a href="/pizza/bbq-pizza" data-fetch="true"
+                                                class="catalog-item__image catalog-item__image_loaded">
+                                                <div class="overimage" style="display: none">
+                                                    <div>Добавлено 0 <br> в корзину </div>
+                                                </div>
+                                                <div class="catalog-item__badge"
+                                                    style="background-image:url('/files/images/198e45aabd1b47bdb9758f14e3adc036.png');"
+                                                    data-badge="Хит">
+                                                    <div class="badge-hint">Хит</div>
+                                                </div>
+                                                <p></p><img
+                                                    src="/files/images/picca-barbekju-30-sm-medium-rectangular-1bcf5c17e4ea48d99a3ff4cd1cbff848.jpeg"
+                                                    alt="Пицца «Барбекю» 30 см">
+                                            </a><a class="catalog-item__info catalog-item__info-link" data-fetch="true"
+                                                href="/pizza/bbq-pizza">
+                                                <div class="catalog-item__desc">
+                                                    <div class="catalog-item__title">Пицца «Барбекю» 30 см</div>
+                                                </div>
+                                                <div class="catalog-item__footer">
+                                                    <div class="catalog-item__weight">670 г</div>
+                                                    <div class="catalog-item__price"><button
+                                                            class="catalog-item__add-to-cart" type="button"
+                                                            data-modal-toggle="warning" title="Добавить в корзину"> +
+                                                            619 <span><label class="rub">i</label></span></button>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                    <div class="catalog-list__item" data-catalog-product="true" data-type=""
+                                        data-price="479.00" data-name="Пицца «Пепперони» 30 см"
+                                        data-category-title="Пицца/На традиционном тесте" data-class="" data-id="10313">
+
+                                        <div class="catalog-item"><a href="/pizza/pepperoni-pizza" data-fetch="true"
+                                                class="catalog-item__image catalog-item__image_loaded">
+                                                <div class="overimage" style="display: none">
+                                                    <div>Добавлено 0 <br> в корзину </div>
+                                                </div>
+                                                <div class="catalog-item__badge"
+                                                    style="background-image:url('/files/images/198e45aabd1b47bdb9758f14e3adc036.png');"
+                                                    data-badge="Хит">
+                                                    <div class="badge-hint">Хит</div>
+                                                </div>
+                                                <p></p><img
+                                                    src="/files/images/picca-pepperoni-30-sm-medium-rectangular-14911200b8eb4eb49169903533a546ec.jpeg"
+                                                    alt="Пицца «Пепперони» 30 см">
+                                            </a><a class="catalog-item__info catalog-item__info-link" data-fetch="true"
+                                                href="/pizza/pepperoni-pizza">
+                                                <div class="catalog-item__desc">
+                                                    <div class="catalog-item__title">Пицца «Пепперони» 30 см</div>
+                                                </div>
+                                                <div class="catalog-item__footer">
+                                                    <div class="catalog-item__weight">530 г</div>
+                                                    <div class="catalog-item__price"><button
+                                                            class="catalog-item__add-to-cart" type="button"
+                                                            data-modal-toggle="warning" title="Добавить в корзину"> +
+                                                            479&nbsp;<span><label class="rub">i</label></span></button>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                    <div class="catalog-list__item" data-catalog-product="true" data-type=""
+                                        data-price="659.00" data-name="Осетинский пирог с лососем"
+                                        data-category-title="Пироги" data-class="" data-id="10339">
+
+                                        <div class="catalog-item"><a href="/pies/salmon-pie" data-fetch="true"
+                                                class="catalog-item__image catalog-item__image_loaded">
+                                                <div class="overimage" style="display: none">
+                                                    <div>Добавлено 0 <br> в корзину </div>
+                                                </div>
+                                                <div class="catalog-item__badge"
+                                                    style="background-image:url('/files/images/198e45aabd1b47bdb9758f14e3adc036.png');"
+                                                    data-badge="Хит">
+                                                    <div class="badge-hint">Хит</div>
+                                                </div>
+                                                <p></p><img
+                                                    src="/files/images/osetinskijj-pirog-s-lososem-medium-rectangular-7aba3ca9867b4e2faeca33127b28f869.jpeg"
+                                                    alt="Осетинский пирог с лососем">
+                                            </a><a class="catalog-item__info catalog-item__info-link" data-fetch="true"
+                                                href="/pies/salmon-pie">
+                                                <div class="catalog-item__desc">
+                                                    <div class="catalog-item__title">Осетинский пирог с лососем</div>
+                                                </div>
+                                                <div class="catalog-item__footer">
+                                                    <div class="catalog-item__weight">760 г</div>
+                                                    <div class="catalog-item__price"><button
+                                                            class="catalog-item__add-to-cart" type="button"
+                                                            data-modal-toggle="warning" title="Добавить в корзину"> +
+                                                            659&nbsp;<span><label class="rub">i</label></span></button>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                    <div class="catalog-list__item" data-catalog-product="true" data-type=""
+                                        data-price="489.00" data-name="Осетинский пирог с говядиной и свининой"
+                                        data-category-title="Пироги" data-class="" data-id="10343">
+
+                                        <div class="catalog-item"><a href="/pies/beef-and-pork-pie" data-fetch="true"
+                                                class="catalog-item__image catalog-item__image_loaded">
+                                                <div class="overimage" style="display: none">
+                                                    <div>Добавлено 0 <br> в корзину </div>
+                                                </div>
+                                                <div class="catalog-item__badge"
+                                                    style="background-image:url('/files/images/198e45aabd1b47bdb9758f14e3adc036.png');"
+                                                    data-badge="Хит">
+                                                    <div class="badge-hint">Хит</div>
+                                                </div>
+                                                <p></p><img
+                                                    src="/files/images/osetinskijj-pirog-s-govjadinojj-i-svininojj-medium-rectangular-99d2b7ed14e1488d9e03911499ba214b.jpeg"
+                                                    alt="Осетинский пирог с говядиной и свининой">
+                                            </a><a class="catalog-item__info catalog-item__info-link" data-fetch="true"
+                                                href="/pies/beef-and-pork-pie">
+                                                <div class="catalog-item__desc">
+                                                    <div class="catalog-item__title">Осетинский пирог с говядиной и
+                                                        свининой</div>
+                                                </div>
+                                                <div class="catalog-item__footer">
+                                                    <div class="catalog-item__weight">740 г</div>
+                                                    <div class="catalog-item__price"><button
+                                                            class="catalog-item__add-to-cart" type="button"
+                                                            data-modal-toggle="warning" title="Добавить в корзину"> +
+                                                            489&nbsp;<span><label class="rub">i</label></span></button>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                    <div class="catalog-list__item" data-catalog-product="true" data-type=""
+                                        data-price="469.00" data-name="Осетинский пирог с ветчиной и сыром"
+                                        data-category-title="Пироги" data-class="" data-id="10351">
+
+                                        <div class="catalog-item"><a href="/pies/ham-and-cheese-pie" data-fetch="true"
+                                                class="catalog-item__image catalog-item__image_loaded">
+                                                <div class="overimage" style="display: none">
+                                                    <div>Добавлено 0 <br> в корзину </div>
+                                                </div>
+                                                <div class="catalog-item__badge"
+                                                    style="background-image:url('/files/images/198e45aabd1b47bdb9758f14e3adc036.png');"
+                                                    data-badge="Хит">
+                                                    <div class="badge-hint">Хит</div>
+                                                </div>
+                                                <p></p><img
+                                                    src="/files/images/osetinskijj-pirog-s-vetchinojj-i-syrom-medium-rectangular-6dc2e73c77ed4ef29f7d1a1252d3b1f8.jpeg"
+                                                    alt="Осетинский пирог с ветчиной и сыром">
+                                            </a><a class="catalog-item__info catalog-item__info-link" data-fetch="true"
+                                                href="/pies/ham-and-cheese-pie">
+                                                <div class="catalog-item__desc">
+                                                    <div class="catalog-item__title">Осетинский пирог с ветчиной и сыром
+                                                    </div>
+                                                </div>
+                                                <div class="catalog-item__footer">
+                                                    <div class="catalog-item__weight">760 г</div>
+                                                    <div class="catalog-item__price"><button
+                                                            class="catalog-item__add-to-cart" type="button"
+                                                            data-modal-toggle="warning" title="Добавить в корзину"> +
+                                                            469&nbsp;<span><label class="rub">i</label></span></button>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                    <div class="catalog-list__item" data-catalog-product="true" data-type=""
+                                        data-price="389.00" data-name="Рис с говядиной и яйцом"
+                                        data-category-title="Wok" data-class="" data-id="10383">
+
+                                        <div class="catalog-item"><a href="/woks/beef-and-egg-rice" data-fetch="true"
+                                                class="catalog-item__image catalog-item__image_loaded">
+                                                <div class="overimage" style="display: none">
+                                                    <div>Добавлено 0 <br> в корзину </div>
+                                                </div>
+                                                <div class="catalog-item__badge"
+                                                    style="background-image:url('/files/images/198e45aabd1b47bdb9758f14e3adc036.png');"
+                                                    data-badge="Хит">
+                                                    <div class="badge-hint">Хит</div>
+                                                </div>
+                                                <p></p><img
+                                                    src="/files/images/ris-s-govjadinojj-i-jajjcom-medium-rectangular-bdaac7605d42427aa158b87832bd79ed.jpeg"
+                                                    alt="Рис с говядиной и яйцом">
+                                            </a><a class="catalog-item__info catalog-item__info-link" data-fetch="true"
+                                                href="/woks/beef-and-egg-rice">
+                                                <div class="catalog-item__desc">
+                                                    <div class="catalog-item__title">Рис с говядиной и яйцом</div>
+                                                </div>
+                                                <div class="catalog-item__footer">
+                                                    <div class="catalog-item__weight">360 г</div>
+                                                    <div class="catalog-item__price"><button
+                                                            class="catalog-item__add-to-cart" type="button"
+                                                            data-modal-toggle="warning" title="Добавить в корзину"> +
+                                                            389&nbsp;<span><label class="rub">i</label></span></button>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                    <div class="catalog-list__item" data-catalog-product="true" data-type=""
+                                        data-price="369.00" data-name="Шаверма-боул" data-category-title="Боулы"
+                                        data-class="" data-id="10663">
+
+                                        <div class="catalog-item"><a href="/bowls/shawarma-bowl" data-fetch="true"
+                                                class="catalog-item__image catalog-item__image_loaded">
+                                                <div class="overimage" style="display: none">
+                                                    <div>Добавлено 0 <br> в корзину </div>
+                                                </div>
+                                                <div class="catalog-item__badge"
+                                                    style="background-image:url('/files/images/198e45aabd1b47bdb9758f14e3adc036.png');"
+                                                    data-badge="Хит">
+                                                    <div class="badge-hint">Хит</div>
+                                                </div>
+                                                <p></p><img
+                                                    src="/files/images/shaverma-boul-medium-rectangular-8d9faa4aa96f4815801d480c9790ce3f.jpeg"
+                                                    alt="Шаверма-боул">
+                                            </a><a class="catalog-item__info catalog-item__info-link" data-fetch="true"
+                                                href="/bowls/shawarma-bowl">
+                                                <div class="catalog-item__desc">
+                                                    <div class="catalog-item__title">Шаверма-боул</div>
+                                                </div>
+                                                <div class="catalog-item__footer">
+                                                    <div class="catalog-item__weight">330 г</div>
+                                                    <div class="catalog-item__price"><button
+                                                            class="catalog-item__add-to-cart" type="button"
+                                                            data-modal-toggle="warning" title="Добавить в корзину"> +
+                                                            369&nbsp;<span><label class="rub">i</label></span></button>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                    <div class="catalog-list__item" data-catalog-product="true" data-type=""
+                                        data-price="129.00" data-name="Маффин шоколадный" data-category-title="Десерты"
+                                        data-class="" data-id="10674">
+
+                                        <div class="catalog-item"><a href="/desserts/choco-muffin" data-fetch="true"
+                                                class="catalog-item__image catalog-item__image_loaded">
+                                                <div class="overimage" style="display: none">
+                                                    <div>Добавлено 0 <br> в корзину </div>
+                                                </div><img
+                                                    src="/files/images/maffin-shokoladnyjj-medium-rectangular-d8285a1e7c8949ab8ba60434833f6624.jpeg"
+                                                    alt="Маффин шоколадный">
+                                            </a><a class="catalog-item__info catalog-item__info-link" data-fetch="true"
+                                                href="/desserts/choco-muffin">
+                                                <div class="catalog-item__desc">
+                                                    <div class="catalog-item__title">Маффин шоколадный</div>
+                                                </div>
+                                                <div class="catalog-item__footer">
+                                                    <div class="catalog-item__weight">120 г</div>
+                                                    <div class="catalog-item__price"><button
+                                                            class="catalog-item__add-to-cart" type="button"
+                                                            data-modal-toggle="warning" title="Добавить в корзину"> +
+                                                            129&nbsp;<span><label class="rub">i</label></span></button>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                    <div class="catalog-list__item" data-catalog-product="true" data-type=""
+                                        data-price="239.00" data-name="Кесадилья с курицей"
+                                        data-category-title="Салаты и закуски/Закуски" data-class="" data-id="10760">
+
+                                        <div class="catalog-item"><a href="/starters/chicken-quesadilla"
+                                                data-fetch="true"
+                                                class="catalog-item__image catalog-item__image_loaded">
+                                                <div class="overimage" style="display: none">
+                                                    <div>Добавлено 0 <br> в корзину </div>
+                                                </div><img
+                                                    src="/files/images/kesadilja-s-kuricejj-medium-rectangular-cc9b243aaa8c4c40ac493d729770f0e9.jpeg"
+                                                    alt="Кесадилья с курицей">
+                                            </a><a class="catalog-item__info catalog-item__info-link" data-fetch="true"
+                                                href="/starters/chicken-quesadilla">
+                                                <div class="catalog-item__desc">
+                                                    <div class="catalog-item__title">Кесадилья с курицей</div>
+                                                </div>
+                                                <div class="catalog-item__footer">
+                                                    <div class="catalog-item__weight">250 г</div>
+                                                    <div class="catalog-item__price"><button
+                                                            class="catalog-item__add-to-cart" type="button"
+                                                            data-modal-toggle="warning" title="Добавить в корзину"> +
+                                                            239&nbsp;<span><label class="rub">i</label></span></button>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                    <div class="catalog-list__item" data-catalog-product="true" data-type=""
+                                        data-price="849.00" data-name="Твентин Карантино"
+                                        data-category-title="Комбо и сеты/Комбо" data-class="" data-id="11015">
+
+                                        <div class="catalog-item"><a href="/combo-sets/tuentin-quarantino"
+                                                data-fetch="true"
+                                                class="catalog-item__image catalog-item__image_loaded">
+                                                <div class="overimage" style="display: none">
+                                                    <div>Добавлено 0 <br> в корзину </div>
+                                                </div><img
+                                                    src="/files/images/tventin-karantino-medium-rectangular-285fe7a891bc42a98b7e573450a00421.jpeg"
+                                                    alt="Твентин Карантино">
+                                            </a><a class="catalog-item__info catalog-item__info-link" data-fetch="true"
+                                                href="/combo-sets/tuentin-quarantino">
+                                                <div class="catalog-item__desc">
+                                                    <div class="catalog-item__title">Твентин Карантино</div>
+                                                </div>
+                                                <div class="catalog-item__footer">
+                                                    <div class="catalog-item__weight">925 г</div>
+                                                    <div class="catalog-item__price"><button
+                                                            class="catalog-item__add-to-cart" type="button"
+                                                            data-modal-toggle="warning" title="Добавить в корзину"> +
+                                                            849&nbsp;<span><label class="rub">i</label></span></button>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                    <div class="catalog-list__item" data-catalog-product="true" data-type=""
+                                        data-price="319.00" data-name="Салат «Цезарь» с курицей"
+                                        data-category-title="Салаты и закуски/Салаты" data-class="" data-id="10361">
+
+                                        <div class="catalog-item"><a href="/starters/chicken-caesar" data-fetch="true"
+                                                class="catalog-item__image catalog-item__image_loaded">
+                                                <div class="overimage" style="display: none">
+                                                    <div>Добавлено 0 <br> в корзину </div>
+                                                </div><img
+                                                    src="/files/images/salat-cezar-s-kuricejj-medium-rectangular-c1a06559ac774a4791fb0769d7a74818.jpeg"
+                                                    alt="Салат «Цезарь» с курицей">
+                                            </a><a class="catalog-item__info catalog-item__info-link" data-fetch="true"
+                                                href="/starters/chicken-caesar">
+                                                <div class="catalog-item__desc">
+                                                    <div class="catalog-item__title">Салат «Цезарь» с курицей</div>
+                                                </div>
+                                                <div class="catalog-item__footer">
+                                                    <div class="catalog-item__weight">170 г</div>
+                                                    <div class="catalog-item__price"><button
+                                                            class="catalog-item__add-to-cart" type="button"
+                                                            data-modal-toggle="warning" title="Добавить в корзину"> +
+                                                            319&nbsp;<span><label class="rub">i</label></span></button>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-products__more" data-count-elements="12"><button
+                                    class="button button_invert"><span class="button__name">Показать еще</span></button>
+                            </div>
+                        </div>
+                        <div class="slider-quote">
+                            <div class="slider-quote__content">
+                                <div
+                                    class="swiper-container swiper-container-horizontal swiper-container-autoheight swiper-container-fade">
+                                    <div class="swiper-wrapper" style="height: 400px;">
+                                        <div class="swiper-slide swiper-slide-active">
+                                            <picture>
+                                                <source srcset="/files/images/3a68bd369141fbdda1fdf1660dfd6904.jpeg"
+                                                    media="(max-width: 736px)">
+                                                <source srcset="/files/images/3a68bd369141fbdda1fdf1660dfd6904.jpeg">
+                                                <img srcset="/files/images/3a68bd369141fbdda1fdf1660dfd6904.jpeg">
+                                            </picture>
+                                            <div class="slider-quote__desc">
+                                                <div class="slider-quote__text">
+                                                    <p> Во главе каждой из наших кухонь стоят повара, которые живут
+                                                        своей работой, вкладывают душу.</p>
+                                                </div>
+                                                <div class="slider-quote__person"><br></div>
+                                                <div class="slider-quote__more"><a class="button"
+                                                        href="/our-kitchen"><span class="button__name">Узнать
+                                                            больше</span></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-quote__pagination-wrapper">
+                                    <div
+                                        class="slider-quote__pagination swiper-pagination-clickable swiper-pagination-bullets">
+                                        <button class="slider-quote__bullet slider-quote__bullet_active"></button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seo">
+                            <div class="article article__seo">
+                                <div class="article__content seo-hidden">
+                                    <h2>Бесплатная доставка еды 24 часа домой и в офис</h2>
+                                    <p> Представьте, что специально для вас трудятся квалифицированные повара. Они
+                                        замешивают душистое тесто, делают оригинальные соусы. Изысканные десерты,
+                                        закуски становятся шедеврами в руках настоящих мастеров. Вы можете попробовать
+                                        новое блюдо или заказать что-то традиционное. Совсем не обязательно искать
+                                        поваренную книгу, хорошее заведение рядом с домом или работой. Идеальный обед,
+                                        перекус или ужин гораздо ближе, чем вы думаете.</p>
+                                    <p><a href="/shipping" title="Районы доставки еды в Санкт-Петербурге">Доставка
+                                            еды</a>&nbsp;— это самый удобный способ попробовать блюда разных кухонь мира
+                                        быстро и без хлопот, ведь Dostaевский привозит заказы 24 часа 7 дней в неделю.
+                                        Термосумка сохраняет тепло горячих блюд, поддерживает оптимальную температуру
+                                        для прохладительных напитков. Вы получаете именно то, что заказывали, всё
+                                        свежее, горячее и аппетитное. Где заказать еду с бесплатной доставкой? Выбор
+                                        очевиден! В меню Dostaевского: </p>
+                                    <ul>
+                                        <li><a href="/sushi" title="Вкусные суши с лососем и угрем">Суши</a> и <a
+                                                href="/rolls" title="Разнообразные роллы с лососем">роллы</a>. Японская
+                                            кухня – одна из самых популярных в СПб. Соберите себе индивидуальный сет или
+                                            закажите <a href="/sets " title="Сеты и наборы еды с доставкой">набор</a> из
+                                            нашего меню.</li>
+                                        <li><a title="Доставка пиццы в Петербурге" href="/pizza">Пицца</a> — итальянскую
+                                            кухню любят многие петербуржцы. Универсальный вариант: это блюдо подойдет и
+                                            для обеденного перерыва в офис и для домашнего ужина вдвоем или в компании
+                                            друзей.</li>
+                                        <li><a href="/pies/ossetian" title="Горячие осетинские пироги">Осетинские
+                                                пироги</a>&nbsp;— горячие, с разными начинками и воздушным тестом с
+                                            поджаристой корочкой.</li>
+                                        <li><a href="/burgers"
+                                                title="Бургеры и чизбургеры с вкусной котлетой и булочкой">Бургеры</a> —
+                                            сытный стритфуд для любых случаев.</li>
+                                        <li><a href="/salads" title="Доставка салатов">Салаты</a>&nbsp;— лёгкие и
+                                            питательные для быстрого перекуса.</li>
+                                        <li><a href="/snacks" title="Разнообразные закуски и снеки">Закуски</a>&nbsp;—
+                                            удобный формат для шумных компаний.</li>
+                                        <li><a href="/desserts"
+                                                title="Вкусные пирожные, торты и прочие десерты">Десерты</a> и <a
+                                                href="/pies/sweet" title="Сладкие пироги">сладкие пироги</a> — угощение
+                                            на каждый день.</li>
+                                        <li><a href="/sauces" title="Соусы к еде с доставкой">Соусы</a>&nbsp;— добавляют
+                                            вкуса и выразительности каждому блюду.</li>
+                                        <li><a href="/drinks" title="Напитки - морс, соки, лимонад">Напитки</a>&nbsp;—
+                                            натуральные соки, морсы, лимонады и не только.</li>
+                                    </ul>
+                                    <p></p>
+                                    <h2>Заказать еду на дом</h2>
+                                    <p> Чем еще мы можем порадовать своих клиентов? Например, круглосуточной доставкой
+                                        еды по Санкт-Петербургу. Если настигнет голод, мы готовы решить эту проблему с
+                                        помощью наших логистических и кулинарных возможностей. Мы с удовольствием
+                                        доставим вам первые и вторые блюда, десерты, суши, снеки и напитки,
+                                        приготовленные по рецептам русской, итальянской, японской и осетинской кухонь.
+                                        Кроме традиционных национальных, у наших шеф-поваров есть собственные кулинарные
+                                        рецепты, которые непременно стоит попробовать.</p>
+                                    <p>Dostaевский принимает ваши заказы на доставку еды на дом 24 часа в сутки, отвечая
+                                        на звонки, обрабатывая онлайн-заявки, при этом вы всегда можете рассчитывать на
+                                        <a href="/contacts">оперативную связь</a> и множество вариантов <a
+                                            href="/payment">оплаты</a>. Первостепенное значение для нас имеет качество
+                                        ингредиентов и обслуживания, для этого мы прилагаем все усилия, чтобы
+                                        развиваться и совершенствоваться. Добавляя в меню новые позиции, мы учитываем
+                                        ваше мнение.</p>
+                                    <p>Сегодня Dostaевский располагает кухнями во многих районах Петербурга, а над
+                                        приготовлением блюд трудится команда опытных специалистов. Теперь вы знаете,
+                                        куда обращаться, чтобы заказать еду на дом и офис в Санкт-Петербурге
+                                        круглосуточно. Изучите наши <a href="/promo">специальные предложения</a> и
+                                        спешите ими воспользоваться!</p>
+                                </div>
+                                <div class="hide-text-block"><button class="show-all button button_invert"
+                                        onclick="showAllSeoText(this)">Показать полностью</button></div>
+                            </div>
+                        </div>
+                        <footer class="footer-nav ios-style">
+                            <div class="footer-nav__container">
+                                <div class="footer-nav__item footer-nav__item_nav">
+                                    <div class="footer-nav__menu">
+                                        <div class="footer-nav__title">Кухни</div>
+                                        <ul class="footer-nav__list">
+                                            <li><a class="footer-nav__link" href="/mexican-cuisine">Мексиканская</a>
+                                            </li>
+                                            <li><a class="footer-nav__link" href="/italian-cuisine">Итальянская</a></li>
+                                            <li><a class="footer-nav__link" href="/chinese-cuisine">Китайская</a></li>
+                                            <li><a class="footer-nav__link" href="/japanese-cuisine">Японская</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-nav__menu">
+                                        <div class="footer-nav__title"><a href="/our-company">Компания</a></div>
+                                        <ul class="footer-nav__list">
+                                            <li><a class="footer-nav__link" href="/our-kitchen">Наша кухня</a></li>
+                                            <li><a class="footer-nav__link" href="/shipping">Доставка</a></li>
+                                            <li><a class="footer-nav__link" href="/payment">Оплата</a></li>
+                                            <li><a class="footer-nav__link" href="/contacts">Контакты</a></li>
+                                            <li><a class="footer-nav__link" target="_blank" rel="nofollow"
+                                                    href="https://franchise.dostaevsky.ru/">Франшиза</a></li>
+                                            <li><a class="footer-nav__link" href="/reviews">Отзывы</a></li>
+                                            <li><a class="footer-nav__link" target="_blank" rel="nofollow"
+                                                    href="https://spb.hh.ru/employer/1340780">Вакансии</a></li>
+                                            <li><a class="footer-nav__link" target="_blank" rel="nofollow"
+                                                    href="https://forms.gle/vpV3MeJ8562GVWeZ8">Поставщикам и
+                                                    партнёрам</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer-nav__item">
+                                    <div class="footer-nav__mobile-app">
+                                        <div class="footer-nav__title">Заказывай через мобильное приложение</div>
+                                        <div class="footer-nav__desc">
+                                            <p>Получай подарок к каждому заказу</p>
+                                        </div><a class="footer-nav__app"
+                                            href="https://itunes.apple.com/ru/app/dostaevskij-dostavka-edy/id982919070"
+                                            target="_blank">
+                                            <div class="footer-nav__app__image-wrapper"><img
+                                                    src="/files/images/icn-appstore.svg"></div><span>Загрузите в App
+                                                Store</span>
+                                        </a><a class="footer-nav__app"
+                                            href="https://play.google.com/store/apps/details?id=ru.dostaevsky.android"
+                                            target="_blank">
+                                            <div class="footer-nav__app__image-wrapper"><img
+                                                    src="/files/images/icn-googleplay.svg"></div><span>Загрузите в
+                                                Google Play</span>
+                                        </a><a class="footer-nav__app"
+                                            href="https://appgallery.huawei.com/#/app/C101172305" target="_blank">
+                                            <div class="footer-nav__app__image-wrapper"><img
+                                                    src="/files/images/icn-appgallery.svg"></div><span>Откройте в
+                                                AppGallery</span>
+                                        </a>
+                                    </div>
+                                    <div class="footer-nav__soc"><a href="https://vk.com/dostaevsky_ru"
+                                            title="Вконтакте" target="_blank"><img
+                                                src="/files/images/51dd44d9cf32eb9c1cfc075b9c81a414.svg"></a><a
+                                            href="https://www.facebook.com/dostaevskyru" title="Facebook"
+                                            target="_blank"><img
+                                                src="/files/images/21530e3e5437e651ed2feefbf13e95cf.svg"></a><a
+                                            href="https://www.youtube.com/channel/UC-P57_un95d2AiES0qZ3kXQ"
+                                            title="Youtube" target="_blank"><img
+                                                src="/files/images/2e9648b5e7acb14a2062416da2897284.svg"></a><a
+                                            href="https://www.instagram.com/dosta.evsky/" title="Instagram"
+                                            target="_blank"><img
+                                                src="/files/images/ecb83bf92409d8fdebe1a2e749246ed8.svg"></a></div>
+                                </div>
+                            </div>
+                        </footer>
+                        <div class="load-content">
+                            <div class="load-content__outer">
+                                <div class="load-content__container">
+                                    <button class="load-content__close" type="button"
+                                        data-href="/sets-sushi-rolls/rolls"></button>
+
+                                    <div class="load-content__inner">
+                                        <div class="product" data-price="159.00" data-name="Маки с авокадо"
+                                            data-category="Суши и роллы/Роллы" data-id="10565" data-uid="">
+                                            <div itemscope="" itemtype="http://schema.org/Product"
+                                                class="product__container">
+
+                                                <div class="product__image">
+                                                    <div class="product__badge"
+                                                        style="background-image:url('https://cdn.dostaevsky.ru/storage/tag/4bb43e75d892488db65a6c68aebe55c9.png');"
+                                                        data-badge="Вегетарианское">
+                                                    </div>
+                                                    <div class="lazy-image"
+                                                        data-image="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/maki-s-avokado-large-rectangular-3dbd3c703e8f44fe99327dad0d38553e.jpeg"
+                                                        data-title="Маки с авокадо"
+                                                        data-alt="Маки с авокадо - Достаевский">
+                                                        <img class="lazy-image__img lazy-image__img_small"
+                                                            src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/maki-s-avokado-extrasmall-rectangular-3dbd3c703e8f44fe99327dad0d38553e.jpeg"
+                                                            data-src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/maki-s-avokado-large-rectangular-3dbd3c703e8f44fe99327dad0d38553e.jpeg"
+                                                            alt="Маки с авокадо - Достаевский" title="Маки с авокадо">
+                                                        <img src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/maki-s-avokado-large-rectangular-3dbd3c703e8f44fe99327dad0d38553e.jpeg"
+                                                            alt="Маки с авокадо - Достаевский" title="Маки с авокадо"
+                                                            class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                                    </div>
+
+                                                </div>
+                                                <div class="product__info">
+
+                                                    <div class="product__desc">
+                                                        <div class="product-header">
+                                                            <h1 itemprop="name" class="product__title">Маки с авокадо
+                                                            </h1>
+                                                            <div class="catalog-item__weight ">105 г</div>
+                                                        </div>
+
+                                                        <p itemprop="description" class="product__ingredients">
+                                                            Вегетарианский ролл по традиционному рецепту с мягким свежим
+                                                            авокадо.</p>
+                                                        <div class="product__composition">
+                                                            <div class="product__composition-header">
+                                                                Состав
+
+                                                                <div
+                                                                    class="catalog-item__weight catalog-item__weight-mobile">
+                                                                    105 г</div>
+                                                            </div>
+                                                            <div class="product__composition-value">Рис, авокадо,
+                                                                водоросли нори.</div>
+                                                        </div>
+
+
+                                                        <div class="product__energy">
+                                                            <div class="product__composition-header">Энергетическая
+                                                                ценность на 100 г</div>
+                                                            <div class="product__energy-box">
+                                                                <div class="product__energy-el">
+                                                                    <div class="product__energy-label">Белки</div>
+                                                                    <div class="product__energy-value">4 г</div>
+                                                                </div>
+                                                                <div class="product__energy-el">
+                                                                    <div class="product__energy-label">Углеводы</div>
+                                                                    <div class="product__energy-value">54 г</div>
+                                                                </div>
+                                                                <div class="product__energy-el">
+                                                                    <div class="product__energy-label">Жиры</div>
+                                                                    <div class="product__energy-value">4 г</div>
+                                                                </div>
+                                                                <div class="product__energy-el">
+                                                                    <div class="product__energy-label">Энерг. ценность
+                                                                    </div>
+                                                                    <div class="product__energy-value">274 кКал</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div itemprop="offers" itemscope=""
+                                                        itemtype="http://schema.org/Offer" class="product__price">
+                                                        <meta itemprop="price" content="159.00">
+                                                        <meta itemprop="priceCurrency" content="RUB">
+                                                        <link itemprop="availability" href="http://schema.org/InStock">
+                                                        <div class="product-price">
+
+                                                        </div>
+                                                        <div class="add-to-cart">
+                                                            <div class="product__add hide-number">
+                                                                <button type="button"
+                                                                    class="product__add-minus">−</button>
+                                                                <div class="product__add-count">0</div>
+                                                            </div>
+                                                            <button class="add-to-cart__button" type="button"
+                                                                title="Добавить в корзину">+ 159&nbsp;<label
+                                                                    class="rub">i</label></button>
+                                                        </div>
+                                                    </div>
+                                                    <meta itemprop="brand" content="Dostaевский">
+                                                    <meta itemprop="url" content="/sets-sushi-rolls/avocado-roll">
+                                                </div>
+                                            </div>
+
+                                            <div class="product__recommendation">
+                                                <div class="product-recommendation">
+                                                    <div class="product-recommendation__title">Достаевский рекомендует
+                                                    </div>
+                                                    <div class="product-recommendation__container">
+
+                                                        <div class="product-recommendation__item" data-price="239.00"
+                                                            data-name="Маки с лососем"
+                                                            data-category-title="Суши и роллы/Роллы"
+                                                            data-catalog-product="true" data-id="10569">
+
+                                                            <div class="catalog-item">
+                                                                <a href="/sets-sushi-rolls/salmon-roll"
+                                                                    class="catalog-item__image">
+                                                                    <div class="overimage" style="display: none">
+                                                                        <div> Добавлено 0 <br> в корзину </div>
+                                                                    </div>
+                                                                    <img src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/maki-s-lososem-medium-rectangular-91c70c5b25534758b40e8243c291952d.jpeg"
+                                                                        alt="Маки с лососем">
+                                                                </a>
+                                                                <a class="catalog-item__info" data-fetch="true"
+                                                                    href="/sets-sushi-rolls/salmon-roll">
+                                                                    <div class="catalog-item__desc">
+                                                                        <div class="catalog-item__title">Маки с лососем
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="catalog-item__footer">
+                                                                        <div class="catalog-item__weight">110 г</div>
+                                                                        <div class="catalog-item__price">
+                                                                            <button class="catalog-item__add-to-cart"
+                                                                                type="button"
+                                                                                data-modal-toggle="warning"
+                                                                                title="Добавить в корзину">
+                                                                                + 239&nbsp;<span><label
+                                                                                        class="rub">i</label></span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-recommendation__item" data-price="29.00"
+                                                            data-name="Васаби" data-category-title="Соусы"
+                                                            data-catalog-product="true" data-id="12467">
+
+                                                            <div class="catalog-item">
+                                                                <a href="/sauces/vasabi" class="catalog-item__image">
+                                                                    <div class="overimage" style="display: none">
+                                                                        <div> Добавлено 0 <br> в корзину </div>
+                                                                    </div>
+                                                                    <img src="https://cdn.dostaevsky.ru/storage/dostaevsky/sousy/vasabi-medium-rectangular-65fa957abc3643d4a8a6fb3c9295abe8.jpeg"
+                                                                        alt="Васаби">
+                                                                </a>
+                                                                <a class="catalog-item__info" data-fetch="true"
+                                                                    href="/sauces/vasabi">
+                                                                    <div class="catalog-item__desc">
+                                                                        <div class="catalog-item__title">Васаби</div>
+                                                                    </div>
+
+                                                                    <div class="catalog-item__footer">
+
+                                                                        <div class="catalog-item__weight">8 г</div>
+                                                                        <div class="catalog-item__price">
+                                                                            <button class="catalog-item__add-to-cart"
+                                                                                type="button"
+                                                                                data-modal-toggle="warning"
+                                                                                title="Добавить в корзину">
+                                                                                + 29&nbsp;<span><label
+                                                                                        class="rub">i</label></span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-recommendation__item" data-price="145.00"
+                                                            data-name="Маки с огурцом"
+                                                            data-category-title="Суши и роллы/Роллы"
+                                                            data-catalog-product="true" data-id="10571">
+
+                                                            <div class="catalog-item">
+                                                                <a href="/sets-sushi-rolls/cucumber-roll"
+                                                                    class="catalog-item__image">
+                                                                    <div class="overimage" style="display: none">
+                                                                        <div> Добавлено 0 <br> в корзину </div>
+                                                                    </div>
+                                                                    <img src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/maki-s-ogurcom-medium-rectangular-fc82b91f9d61471d98f28ed367c5bfd3.jpeg"
+                                                                        alt="Маки с огурцом">
+                                                                </a>
+                                                                <a class="catalog-item__info" data-fetch="true"
+                                                                    href="/sets-sushi-rolls/cucumber-roll">
+                                                                    <div class="catalog-item__desc">
+                                                                        <div class="catalog-item__title">Маки с огурцом
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="catalog-item__footer">
+
+                                                                        <div class="catalog-item__weight">110 г</div>
+                                                                        <div class="catalog-item__price">
+                                                                            <button class="catalog-item__add-to-cart"
+                                                                                type="button"
+                                                                                data-modal-toggle="warning"
+                                                                                title="Добавить в корзину">
+                                                                                + 145&nbsp;<span><label
+                                                                                        class="rub">i</label></span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-recommendation__item" data-price="449.00"
+                                                            data-name="Ролл «Филадельфия»"
+                                                            data-category-title="Суши и роллы/Роллы"
+                                                            data-catalog-product="true" data-id="10593">
+
+                                                            <div class="catalog-item">
+                                                                <a href="/sets-sushi-rolls/philadelphia-roll"
+                                                                    class="catalog-item__image">
+                                                                    <div class="overimage" style="display: none">
+                                                                        <div> Добавлено 0 <br> в корзину </div>
+                                                                    </div>
+                                                                    <div class="catalog-item__badge"
+                                                                        style="background-image:url('https://cdn.dostaevsky.ru/storage/tag/198e45aabd1b47bdb9758f14e3adc036.png');"
+                                                                        data-badge="Хит"></div>
+                                                                    <p></p> <img
+                                                                        src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/roll-filadelfija-medium-rectangular-b95e4f9fa26c44a19031670e448374fa.jpeg"
+                                                                        alt="Ролл «Филадельфия»">
+                                                                </a>
+                                                                <a class="catalog-item__info" data-fetch="true"
+                                                                    href="/sets-sushi-rolls/philadelphia-roll">
+                                                                    <div class="catalog-item__desc">
+                                                                        <div class="catalog-item__title">Ролл
+                                                                            «Филадельфия»</div>
+                                                                    </div>
+                                                                    <div class="catalog-item__footer">
+                                                                        <div class="catalog-item__weight">280 г</div>
+                                                                        <div class="catalog-item__price">
+                                                                            <button class="catalog-item__add-to-cart"
+                                                                                type="button"
+                                                                                data-modal-toggle="warning"
+                                                                                title="Добавить в корзину">
+                                                                                + 449&nbsp;<span><label
+                                                                                        class="rub">i</label></span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="product__popup">
+                                                <div class="product__popup-dummy"></div>
+                                                <div class="triangle-with-shadow"></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__nav">
+                    <ul class="footer-link">
+                        <li class="footer-link__item"><a class="footer-link__link"
+                                href="/user-agreement">Пользовательское соглашение</a></li>
+                        <li class="footer-link__item"><a class="footer-link__link"
+                                href="/license-agreement">Лицензионное соглашение</a></li>
+                        <li class="footer-link__item"><a class="footer-link__link"
+                                href="/confidentiality-of-personal-information">Политика обработки персональных
+                                данных</a></li>
+                        <li class="footer-link__item"><a class="footer-link__link"
+                                href="https://dostaevsky.ru/promo-codes-terms-and-conditions">Условия применения
+                                промокодов</a></li>
+                        <li class="footer-link__item"><a class="footer-link__link" target="_blank" rel="nofollow"
+                                href="https://docs.google.com/spreadsheets/d/1ur5j0uOqTjL0qoYUKG6LU_4_NbhZ4GVrec4EudP4nkU/edit#gid=0">Полное
+                                меню</a></li>
+                        <li class="footer-link__item"><a class="footer-link__link" href="/sitemap">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__container">
+                <div class="footer__copyright"><span>©2022, Dostaevsky</span></div>
+                <div class="footer__payments-system"><span>Принимаем</span>
+                    <ul class="payments-system">
+                        <li class="payments-system__logo"><img src="/files/images/logo-visa_small.svg" alt="visa"></li>
+                        <li class="payments-system__logo"><img src="/files/images/logo-mastercard_small.svg"
+                                alt="mastercard"></li>
+                        <li class="payments-system__logo"><img src="/files/images/logo-mir_small.svg" alt="mir"></li>
+                        <li class="payments-system__logo"><img src="/files/images/apple-pay-logo_small.svg"
+                                alt="apple pay"></li>
+                        <li class="payments-system__logo"><img src="/files/images/gpay.svg" alt="google pay"></li>
+                    </ul>
+                </div>
+                <div class="footer__developer">
+                    <div></div>
+                    <div><span>Задизайнено </span><a href="https://artu.studio/" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="60" height="25" viewBox="0 0 60 25"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 0H60V25H0V0ZM42.8604 12.2301C42.8604 14.8592 45.0176 16.9954 47.6727 16.9954C50.3278 16.9954 52.485 14.8592 52.5087 12.2301V7.44141H49.9485V12.2301C49.9485 13.4743 48.9054 14.4837 47.6727 14.4837C46.4163 14.4837 45.3969 13.4508 45.3969 12.2301V7.44141H42.8604V12.2301ZM14.6028 17.0188H17.1393V12.2301C17.1393 9.62447 14.9821 7.46484 12.327 7.46484C9.67188 7.46484 7.51465 9.601 7.51465 12.2536C7.51465 14.8827 9.67188 17.0188 12.327 17.0188C13.1567 17.0188 13.9153 16.8076 14.6028 16.4555V17.0188ZM10.0511 12.2536C10.0511 11.0094 11.0942 10.0001 12.327 10.0001C13.5597 10.0001 14.6028 11.0094 14.6028 12.2301V12.4648C14.4606 13.6386 13.5123 14.5071 12.327 14.5071C11.0706 14.5071 10.0511 13.4742 10.0511 12.2536ZM23.4216 17.0423L23.3978 12.277C23.3978 11.0329 24.4409 10.0235 25.6737 10.0235H28.1154V7.48828H25.6737C23.0186 7.48828 20.8613 9.62443 20.8613 12.2535V17.0423H23.4216ZM39.0675 16.9953L39.115 14.5305H36.6732C35.4167 14.5305 34.3975 13.4977 34.3975 12.277V10.0235H36.7444V7.48828H31.8135V12.2301C31.8135 14.8592 33.9707 16.9953 36.6259 16.9953H39.0675Z"
+                                    fill="white"></path>
+                            </svg></a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal-window modal-window_not-padding" data-modal-window="cart">
+        <div class="modal-window__wrapper">
+            <div class="modal-window__container">
+                <div class="modal-window__inner">
+                    <div class="modal-window__content">
+                        <div class="cart cart_limit">
+                            <div class="cart__header">
+                                <div class="cart-header">
+                                    <div class="cart-header__container">
+                                        <div class="cart-header__item"><span>Корзина</span></div>
+                                    </div>
+                                </div><button class="modal-window__close"></button>
+                            </div>
+                            <div class="cart__container" data-modal-scroll="">
+                                <div id="basket">
+                                    <div class="basket">
+                                        <div class="basket__products">
+                                            <div class="basket__products-blank_limit">
+                                                <div class="basket-blank-limit">
+                                                    <div class="basket-blank-limit__info-wrap">
+                                                        <div class="basket-blank-limit__title">Минимальная сумма
+                                                            заказа&nbsp;400&nbsp;₽</div>
+                                                        <p class="basket-blank-limit__description">Без учета напитков,
+                                                            соусов, топпингов для пицц и посуды</p>
+                                                    </div>
+                                                    <div class="basket-blank-limit__controls-wrap"><button type="button"
+                                                            class="button-new button-new--purple">В меню</button></div>
+                                                </div>
+                                            </div>
+                                            <div class="basket__products-group">
+                                                <div class="basket__products-list">
+                                                    <div class="basket__scope-products">
+                                                        <div class="basket__product">
+                                                            <div class="basket__product-img"><img
+                                                                    src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/maki-s-avokado-medium-rectangular-3dbd3c703e8f44fe99327dad0d38553e.jpeg"
+                                                                    alt=""></div>
+                                                            <div class="basket__product-wrap">
+                                                                <div class="basket__product-wrap_info">
+                                                                    <div class="basket__product-wrap_title-group">
+                                                                        <p class="basket__product-title">Маки с авокадо
+                                                                        </p>
+                                                                        <div class="basket__product-edit"></div>
+                                                                    </div>
+                                                                    <div class="basket__product-wrap_topping"></div>
+                                                                    <div class="basket__product-wrap_bottom-info">
+                                                                        <div class="basket__product-wrap_price">
+                                                                            <div class="basket__product-price__wrap">
+                                                                                <p class="basket__product-price__value">
+                                                                                    159&nbsp;<span><label
+                                                                                            class="rub">i</label></span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="basket__product-wrap_extra-info">
+                                                                            <div class="basket__product-weight">
+                                                                                <span>105 г</span></div>
+                                                                        </div>
+                                                                        <div class="basket__product-wrap_buttons">
+                                                                            <div class="counter-buttons"><span
+                                                                                    class="counter-buttons__count">1</span>
+                                                                                <div class="counter-buttons__wrap">
+                                                                                    <button
+                                                                                        class="counter-buttons__minus"><svg
+                                                                                            width="12" height="4"
+                                                                                            viewBox="0 0 12 4"
+                                                                                            class="icon">
+                                                                                            <path
+                                                                                                d="M10.6 0.916748H7.4H4.6H1.4C0.6268 0.916748 0 1.59578 0 2.43341C0 3.27105 0.6268 3.95008 1.4 3.95008H4.6H7.4H10.6C11.3732 3.95008 12 3.27105 12 2.43341C12 1.59578 11.3732 0.916748 10.6 0.916748Z">
+                                                                                            </path>
+                                                                                        </svg></button>
+                                                                                    <div class="counter-buttons__line">
+                                                                                    </div><button
+                                                                                        class="counter-buttons__plus"><svg
+                                                                                            width="12" height="14"
+                                                                                            viewBox="0 0 12 14"
+                                                                                            class="icon">
+                                                                                            <path
+                                                                                                d="M10.6 5.48333H7.4V2.01667C7.4 1.17903 6.7732 0.5 6 0.5C5.2268 0.5 4.6 1.17903 4.6 2.01667V5.48333H1.4C0.6268 5.48333 0 6.16237 0 7C0 7.83763 0.6268 8.51667 1.4 8.51667H4.6V11.9833C4.6 12.821 5.2268 13.5 6 13.5C6.7732 13.5 7.4 12.821 7.4 11.9833V8.51667H10.6C11.3732 8.51667 12 7.83763 12 7C12 6.16237 11.3732 5.48333 10.6 5.48333Z">
+                                                                                            </path>
+                                                                                        </svg></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="basket__stocks">
+                                            <div class="basket__external-goods"></div>
+                                            <div class="basket__total">
+                                                <div class="basket__total-price">
+                                                    <p class="basket__total-price_title">К оплате</p>
+                                                    <div class="basket__total-price-wrap">
+                                                        <p class="">159&nbsp;<span><label class="rub">i</label></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="basket__total-button"><button type="button" disabled=""
+                                                        class="button-new button-new--purple">Продолжить</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="basket__modal">
+                                    <div></div>
+                                </div>
+                                <div class="cart__recommendation">
+                                    <div class="product-recommendation">
+                                        <div class="product-recommendation__title">Достаевский рекомендует</div>
+                                        <div class="product-recommendation__container">
+                                            
+                                            <div class="product-recommendation__item" data-price="145.00"
+                                                data-name="Маки с огурцом" data-category-title="Суши и роллы/Роллы"
+                                                data-catalog-product="true" data-id="10571">
+                                                
+                                                <div class="catalog-item"><a href="/sets-sushi-rolls/cucumber-roll"
+                                                        class="catalog-item__image catalog-item__image_loaded">
+                                                        <div class="overimage" style="display: none">
+                                                            <div>Добавлено 0 <br> в корзину </div>
+                                                        </div>
+                                                        <div class="lazy-image"
+                                                            data-image="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/maki-s-ogurcom-medium-rectangular-fc82b91f9d61471d98f28ed367c5bfd3.jpeg"
+                                                            data-title="Маки с огурцом"
+                                                            data-alt="Маки с огурцом - Достаевский"><img
+                                                                class="lazy-image__img lazy-image__img_small"
+                                                                src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/maki-s-ogurcom-extrasmall-rectangular-fc82b91f9d61471d98f28ed367c5bfd3.jpeg"
+                                                                data-src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/maki-s-ogurcom-large-rectangular-fc82b91f9d61471d98f28ed367c5bfd3.jpeg"
+                                                                alt="Маки с огурцом - Достаевский"
+                                                                title="Маки с огурцом"><img
+                                                                src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/maki-s-ogurcom-medium-rectangular-fc82b91f9d61471d98f28ed367c5bfd3.jpeg"
+                                                                alt="Маки с огурцом - Достаевский"
+                                                                title="Маки с огурцом"
+                                                                class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                                        </div>
+                                                    </a><a class="catalog-item__info" data-fetch="true"
+                                                        href="/sets-sushi-rolls/cucumber-roll">
+                                                        <div class="catalog-item__desc">
+                                                            <div class="catalog-item__title">Маки с огурцом</div>
+                                                        </div>
+                                                        <div class="catalog-item__footer">
+                                                            <div class="catalog-item__weight">110 г</div>
+                                                            <div class="catalog-item__price"><button
+                                                                    class="catalog-item__add-to-cart" type="button"
+                                                                    data-modal-toggle="warning"
+                                                                    title="Добавить в корзину"> + 145&nbsp;<span><label
+                                                                            class="rub">i</label></span></button></div>
+                                                        </div>
+                                                    </a></div>
+                                            </div>
+                                            <div class="product-recommendation__item" data-price="219.00"
+                                                data-name="Ролл овощной" data-category-title="Суши и роллы/Роллы"
+                                                data-catalog-product="true" data-id="10587">
+                                                
+                                                <div class="catalog-item"><a href="/sets-sushi-rolls/veggie-roll"
+                                                        class="catalog-item__image catalog-item__image_loaded">
+                                                        <div class="overimage" style="display: none">
+                                                            <div>Добавлено 0 <br> в корзину </div>
+                                                        </div>
+                                                        <div class="lazy-image"
+                                                            data-image="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/roll-ovoshhnojj-medium-rectangular-c5484e81014740b498b555d756505596.jpeg"
+                                                            data-title="Ролл овощной"
+                                                            data-alt="Ролл овощной - Достаевский"><img
+                                                                class="lazy-image__img lazy-image__img_small"
+                                                                src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/roll-ovoshhnojj-extrasmall-rectangular-c5484e81014740b498b555d756505596.jpeg"
+                                                                data-src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/roll-ovoshhnojj-large-rectangular-c5484e81014740b498b555d756505596.jpeg"
+                                                                alt="Ролл овощной - Достаевский"
+                                                                title="Ролл овощной"><img
+                                                                src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/roll-ovoshhnojj-medium-rectangular-c5484e81014740b498b555d756505596.jpeg"
+                                                                alt="Ролл овощной - Достаевский" title="Ролл овощной"
+                                                                class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                                        </div>
+                                                    </a><a class="catalog-item__info" data-fetch="true"
+                                                        href="/sets-sushi-rolls/veggie-roll">
+                                                        <div class="catalog-item__desc">
+                                                            <div class="catalog-item__title">Ролл овощной</div>
+                                                        </div>
+                                                        <div class="catalog-item__footer">
+                                                            <div class="catalog-item__weight">200 г</div>
+                                                            <div class="catalog-item__price"><button
+                                                                    class="catalog-item__add-to-cart" type="button"
+                                                                    data-modal-toggle="warning"
+                                                                    title="Добавить в корзину"> + 219&nbsp;<span><label
+                                                                            class="rub">i</label></span></button></div>
+                                                        </div>
+                                                    </a></div>
+                                            </div>
+                                            <div class="product-recommendation__item" data-price="129.00"
+                                                data-name="Мисо суп" data-category-title="Супы"
+                                                data-catalog-product="true" data-id="10539">
+                                                
+                                                <div class="catalog-item"><a href="/soups/miso-soup"
+                                                        class="catalog-item__image catalog-item__image_loaded">
+                                                        <div class="overimage" style="display: none">
+                                                            <div>Добавлено 0 <br> в корзину </div>
+                                                        </div>
+                                                        <div class="lazy-image"
+                                                            data-image="https://cdn.dostaevsky.ru/storage/dostaevsky/supy/miso-sup-medium-rectangular-c981058ad9e54314bc07baab0eab59c7.jpeg"
+                                                            data-title="Мисо суп" data-alt="Мисо суп - Достаевский"><img
+                                                                class="lazy-image__img lazy-image__img_small"
+                                                                src="https://cdn.dostaevsky.ru/storage/dostaevsky/supy/miso-sup-extrasmall-rectangular-c981058ad9e54314bc07baab0eab59c7.jpeg"
+                                                                data-src="https://cdn.dostaevsky.ru/storage/dostaevsky/supy/miso-sup-large-rectangular-c981058ad9e54314bc07baab0eab59c7.jpeg"
+                                                                alt="Мисо суп - Достаевский" title="Мисо суп"><img
+                                                                src="https://cdn.dostaevsky.ru/storage/dostaevsky/supy/miso-sup-medium-rectangular-c981058ad9e54314bc07baab0eab59c7.jpeg"
+                                                                alt="Мисо суп - Достаевский" title="Мисо суп"
+                                                                class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                                        </div>
+                                                    </a><a class="catalog-item__info" data-fetch="true"
+                                                        href="/soups/miso-soup">
+                                                        <div class="catalog-item__desc">
+                                                            <div class="catalog-item__title">Мисо суп</div>
+                                                        </div>
+                                                        <div class="catalog-item__footer">
+                                                            <div class="catalog-item__weight">290 г</div>
+                                                            <div class="catalog-item__price"><button
+                                                                    class="catalog-item__add-to-cart" type="button"
+                                                                    data-modal-toggle="warning"
+                                                                    title="Добавить в корзину"> + 129&nbsp;<span><label
+                                                                            class="rub">i</label></span></button></div>
+                                                        </div>
+                                                    </a></div>
+                                            </div>
+                                            <div class="product-recommendation__item" data-price="449.00"
+                                                data-name="Ролл «Филадельфия»" data-category-title="Суши и роллы/Роллы"
+                                                data-catalog-product="true" data-id="10593">
+                                                
+                                                <div class="catalog-item"><a href="/sets-sushi-rolls/philadelphia-roll"
+                                                        class="catalog-item__image catalog-item__image_loaded">
+                                                        <div class="overimage" style="display: none">
+                                                            <div>Добавлено 0 <br> в корзину </div>
+                                                        </div>
+                                                        <div class="catalog-item__badge"
+                                                            style="background-image:url('https://cdn.dostaevsky.ru/storage/tag/198e45aabd1b47bdb9758f14e3adc036.png');"
+                                                            data-badge="Хит">
+                                                            <div class="badge-hint">Хит</div>
+                                                        </div>
+                                                        <p></p>
+                                                        <div class="lazy-image"
+                                                            data-image="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/roll-filadelfija-medium-rectangular-b95e4f9fa26c44a19031670e448374fa.jpeg"
+                                                            data-title="Ролл «Филадельфия»"
+                                                            data-alt="Ролл «Филадельфия» - Достаевский"><img
+                                                                class="lazy-image__img lazy-image__img_small"
+                                                                src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/roll-filadelfija-extrasmall-rectangular-b95e4f9fa26c44a19031670e448374fa.jpeg"
+                                                                data-src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/roll-filadelfija-large-rectangular-b95e4f9fa26c44a19031670e448374fa.jpeg"
+                                                                alt="Ролл «Филадельфия» - Достаевский"
+                                                                title="Ролл «Филадельфия»"><img
+                                                                src="https://cdn.dostaevsky.ru/storage/dostaevsky/sushi/roll-filadelfija-medium-rectangular-b95e4f9fa26c44a19031670e448374fa.jpeg"
+                                                                alt="Ролл «Филадельфия» - Достаевский"
+                                                                title="Ролл «Филадельфия»"
+                                                                class="lazy-image__img lazy-image__img_large lazy-image__img_loaded">
+                                                        </div>
+                                                    </a><a class="catalog-item__info" data-fetch="true"
+                                                        href="/sets-sushi-rolls/philadelphia-roll">
+                                                        <div class="catalog-item__desc">
+                                                            <div class="catalog-item__title">Ролл «Филадельфия»</div>
+                                                        </div>
+                                                        <div class="catalog-item__footer">
+                                                            <div class="catalog-item__weight">280 г</div>
+                                                            <div class="catalog-item__price"><button
+                                                                    class="catalog-item__add-to-cart" type="button"
+                                                                    data-modal-toggle="warning"
+                                                                    title="Добавить в корзину"> + 449&nbsp;<span><label
+                                                                            class="rub">i</label></span></button></div>
+                                                        </div>
+                                                    </a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-window" data-modal-window="auth">
+        <div class="modal-window__wrapper">
+            <div class="modal-window__container">
+                <div class="modal-window__inner">
+                    <div class="modal-window__title">
+                        <div>Личный кабинет</div>
+                    </div>
+                    <div class="modal-window__content">
+                        <div class="authorization" data-modal-scroll="">
+                            <form
+                                class="authorization__container authorization__container_authorization authorization__container_show"
+                                data-action="login" _lpchecked="1">
+                                <div class="authorization__title" style="padding-bottom: 10px">
+                                    <div class="authorization__title-content">Привет, авторизируйтесь!</div>
+                                </div>
+                                <div class="authorization__content" style="display: none">
+                                    <div class="authorization__content-title">Через соц. сети</div>
+                                    <ul class="authorization__social-networks">
+                                        <li class="authorization__social"><button type="button" data-soc-type="vk"
+                                                title="Вконтакте"><img src="/files/images/icn-vk_l.svg"></button></li>
+                                        <li class="authorization__social"><button type="button" data-soc-type="fb"
+                                                title="Facebook"><img src="/files/images/icn-fb_l.svg"></button></li>
+                                        <li class="authorization__social"><button type="button" data-soc-type="tw"
+                                                title="Twitter"><img src="/files/images/icn-tw_l.svg"></button></li>
+                                        <li class="authorization__social"><button type="button" data-soc-type="gg"
+                                                title="Google+"><img src="/files/images/icn-g_l.svg"></button></li>
+                                    </ul>
+                                </div>
+                                <div class="authorization__content">
+                                    <div class="authorization__content-title">Сможете добавлять товары в избранное,
+                                        посмотреть историю заказов и быстро заказать на&nbsp;сохраненные адреса.</div>
+                                    <div class="authorization__telephone">
+                                        <div class="input-text">
+                                            <div class="input-text__box"><input type="tel" class="input-text__control"
+                                                    name="phone" placeholder="+7 XXX XXX-XX-XX" maxlength="16"></div>
+                                            <button class="button" data-agreement-element="authorize"><img
+                                                    src="/files/images/icn-login-go.svg" alt="go"></button>
+                                        </div>
+                                    </div>
+                                    <div class="authorization__agreement"><label
+                                            class="input-check input-check_small input-check_agreement">
+                                            <!--<div class="input-check__box"><input class="input-check__control" type="checkbox" name="agreement" checked data-agreement-link="authorize"><div class="input-check__dec"></div></div>--><span
+                                                class="input-check__label">Указывая номер телефона вы принимаете <a
+                                                    href="/confidentiality-of-personal-information/"
+                                                    target="_blank">Политику обработки персональных
+                                                    данных</a></span></label></div>
+
+                                    <div class="authorization__footer"></div>
+                                </div>
+                            </form>
+                            <div style="display: none"
+                                class="authorization__container authorization__container_registration-ask">
+                                <div class="authorization__content">
+                                    <div class="authorization__content-title">Что дает регистрация в Достаевском?</div>
+                                    <ul class="authorization__advantage">
+                                        <li>Персональные предложения</li>
+                                        <li>Купоны и скидки для своих</li>
+                                    </ul>
+                                    <div class="authorization__footer"><button
+                                            class="button button_wide-m button_border" data-action="to-reg"
+                                            type="button"><span class="button__name">Зарегистрироваться</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="authorization__container authorization__container_authorization-confirm"
+                                data-action="confirm-sms">
+                                <div class="authorization__title">
+                                    <div class="authorization__title-content">Введите код</div>
+                                </div>
+                                <div class="authorization__content">
+                                    <div class="authorization__desc">
+                                        <p style="display: block;" class="authorization__desc_account">Мы отправили его
+                                            на номер <span class="authorization__confirm-phone">+7 ХХХ ХХХ-ХХ-ХХ</span>
+                                        </p>
+                                        <p style="display: none;" class="authorization__desc_basket">Мы отправили его на
+                                            номер <span
+                                                class="authorization__confirm-phone authorization__confirm-phone-basket">+7
+                                                900 000-00-00</span></p>
+                                    </div>
+                                    <div class="authorization__telephone">
+                                        <div class="confirm-code"><input type="number" name="user_sms_confirm_code"
+                                                autocomplete="one-time-code"></div>
+                                    </div>
+                                    <div class="authorization__footer"><button
+                                            class="button button_wide-m button_red"><span
+                                                class="button__name">Подтвердить и войти</span></button></div>
+                                    <div class="confirm-footer">
+                                        <div class="authorization__note"><button data-repeat-action="login"
+                                                type="button">Повторить SMS</button></div>
+                                        <div class="authorization__note"><button data-action="change-phone"
+                                                type="button">Изменить номер</button></div>
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="authorization__container authorization__container_registration"
+                                data-action="registration">
+                                <div class="authorization__title" style="padding-bottom: 10px">
+                                    <div class="authorization__title-content">Регистрация</div>
+                                </div>
+                                <div class="authorization__content" style="display: none">
+                                    <div class="authorization__content-title">Через соц. сети</div>
+                                    <ul class="authorization__social-networks">
+                                        <li class="authorization__social"><button type="button" data-soc-type="vk"><img
+                                                    src="/files/images/icn-vk_l.svg"></button></li>
+                                        <li class="authorization__social"><button type="button" data-soc-type="fb"><img
+                                                    src="/files/images/icn-fb_l.svg"></button></li>
+                                        <li class="authorization__social"><button type="button" data-soc-type="tw"><img
+                                                    src="/files/images/icn-tw_l.svg"></button></li>
+                                        <li class="authorization__social"><button type="button" data-soc-type="gg"><img
+                                                    src="/files/images/icn-g_l.svg"></button></li>
+                                    </ul>
+                                </div>
+                                <div class="authorization__content authorization__content_grey">
+                                    <div class="authorization__content-title">По телефону</div>
+                                    <div class="authorization__telephone">
+                                        <div class="input-text">
+                                            <div class="input-text__box"><input type="tel" class="input-text__control"
+                                                    name="phone" placeholder="+7 XXX XXX-XX-XX" maxlength="16"></div>
+                                        </div>
+                                    </div>
+                                    <div class="authorization__agreement"><label
+                                            class="input-check input-check_small input-check_agreement">
+                                            <div class="input-check__box"><input class="input-check__control"
+                                                    type="checkbox" name="agreement" checked=""
+                                                    data-agreement-link="reg">
+                                                <div class="input-check__dec"></div>
+                                            </div>
+                                            <div class="input-check__label">Я согласен с <a
+                                                    href="/confidentiality-of-personal-information/"
+                                                    target="_blank">Политикой конфиденциальности</a></div>
+                                        </label></div>
+                                    <div class="authorization__note">
+                                        <p>Временный пароль будет отправлен по SMS</p>
+                                    </div>
+                                    <div class="authorization__footer"><button class="button button_red button_wide-m"
+                                            data-agreement-element="reg"><span
+                                                class="button__name">Зарегистрироваться</span></button></div>
+                                </div>
+                            </form>
+                            <div style="display: none;"
+                                class="authorization__container authorization__container_authorization-ask">
+                                <div class="authorization__content">
+                                    <div class="authorization__content-title">Вы зарегистрированы в Достаевском?</div>
+                                    <div class="authorization__desc">
+                                        <p>Тогда заходите в личный кабинет, получайте скидки, собирайте награды.</p>
+                                    </div>
+                                    <div class="authorization__footer"><button
+                                            class="button button_wide-m button_border" data-action="to-login"
+                                            type="button"><span class="button__name">Мы вас не узнали!</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="authorization__container authorization__container_registration-confirm"
+                                data-action="registration">
+                                <div class="authorization__title">
+                                    <div>Регистрация</div>
+                                </div>
+                                <div class="authorization__content">
+                                    <div class="authorization__desc">
+                                        <p><span class="authorization__confirm-name">Иннокентий</span>, здравствуйте!
+                                            <br>Проверьте правильность номера мобильного телефона:</p>
+                                    </div>
+                                    <div class="authorization__telephone">
+                                        <div class="input-text">
+                                            <div class="input-text__box"><input class="input-text__control" name="phone"
+                                                    placeholder="+7 XXX XXX-XX-XX" maxlength="16"></div>
+                                        </div>
+                                    </div>
+                                    <div class="authorization__note">
+                                        <p>Чтобы подтвердить номер телефона, мы&nbsp;отправим вам временный пароль по
+                                            SMS.</p>
+                                    </div>
+                                    <div class="authorization__footer"><button
+                                            class="button button_wide-m button_red"><span class="button__name">Отправить
+                                                пароль</span></button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div><button class="modal-window__close" type="button" title="Закрыть"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-window" data-modal-window="auth">
+        <div class="modal-window__wrapper">
+            <div class="modal-window__container">
+                <div class="modal-window__inner">
+                    <div class="modal-window__title">
+                        <div>Личный кабинет</div>
+                    </div>
+                    <div class="modal-window__content">
+                        <div class="authorization" data-modal-scroll="">
+                            <form class="authorization__container authorization__container_authorization"
+                                data-action="login" _lpchecked="1">
+                                <div class="authorization__title" style="padding-bottom: 10px">
+                                    <div class="authorization__title-content">Привет, авторизируйтесь!</div>
+                                </div>
+                                <div class="authorization__content" style="display: none">
+                                    <div class="authorization__content-title">Через соц. сети</div>
+                                    <ul class="authorization__social-networks">
+                                        <li class="authorization__social"><button type="button" data-soc-type="vk"
+                                                title="Вконтакте"><img src="/files/images/icn-vk_l.svg"></button></li>
+                                        <li class="authorization__social"><button type="button" data-soc-type="fb"
+                                                title="Facebook"><img src="/files/images/icn-fb_l.svg"></button></li>
+                                        <li class="authorization__social"><button type="button" data-soc-type="tw"
+                                                title="Twitter"><img src="/files/images/icn-tw_l.svg"></button></li>
+                                        <li class="authorization__social"><button type="button" data-soc-type="gg"
+                                                title="Google+"><img src="/files/images/icn-g_l.svg"></button></li>
+                                    </ul>
+                                </div>
+                                <div class="authorization__content">
+                                    <div class="authorization__content-title">Сможете добавлять товары в избранное,
+                                        посмотреть историю заказов и быстро заказать на&nbsp;сохраненные адреса.</div>
+                                    <div class="authorization__telephone">
+                                        <div class="input-text">
+                                            <div class="input-text__box"><input type="tel" class="input-text__control"
+                                                    name="phone" placeholder="+7 XXX XXX-XX-XX" maxlength="16"></div>
+                                            <button class="button" data-agreement-element="authorize"><img
+                                                    src="/files/images/icn-login-go.svg" alt="go"></button>
+                                        </div>
+                                    </div>
+                                    <div class="authorization__agreement"><label
+                                            class="input-check input-check_small input-check_agreement">
+                                            <!--<div class="input-check__box"><input class="input-check__control" type="checkbox" name="agreement" checked data-agreement-link="authorize"><div class="input-check__dec"></div></div>--><span
+                                                class="input-check__label">Указывая номер телефона вы принимаете <a
+                                                    href="/confidentiality-of-personal-information/"
+                                                    target="_blank">Политику обработки персональных
+                                                    данных</a></span></label></div>
+                                    <div id="recaptcha" class="g-recaptcha"
+                                        data-sitekey="6LcjOdcZAAAAABesSLFZoxOI_zsMW53_9JVG9n7p" data-size="invisible"
+                                        style="visibility: hidden;">
+                                        <div class="grecaptcha-badge" data-style="bottomright"
+                                            style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+                                            <div class="grecaptcha-logo"><iframe title="reCAPTCHA"
+                                                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcjOdcZAAAAABesSLFZoxOI_zsMW53_9JVG9n7p&amp;co=aHR0cHM6Ly9kb3N0YWV2c2t5LnJ1OjQ0Mw..&amp;hl=ru&amp;v=85AXn53af-oJBEtL2o2WpAjZ&amp;size=invisible&amp;cb=chkb7cmwcnkl"
+                                                    width="256" height="60" role="presentation" name="a-hktlw1nkisqr"
+                                                    frameborder="0" scrolling="no"
+                                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                            </div>
+                                            <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response"
+                                                name="g-recaptcha-response" class="g-recaptcha-response"
+                                                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                        </div><iframe style="display: none;"></iframe>
+                                    </div>
+                                    <div class="authorization__footer"></div>
+                                </div>
+                            </form>
+                            <div style="display: none"
+                                class="authorization__container authorization__container_registration-ask">
+                                <div class="authorization__content">
+                                    <div class="authorization__content-title">Что дает регистрация в Достаевском?</div>
+                                    <ul class="authorization__advantage">
+                                        <li>Персональные предложения</li>
+                                        <li>Купоны и скидки для своих</li>
+                                    </ul>
+                                    <div class="authorization__footer"><button
+                                            class="button button_wide-m button_border" data-action="to-reg"
+                                            type="button"><span class="button__name">Зарегистрироваться</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <form
+                                class="authorization__container authorization__container_authorization-confirm authorization__container_fadein authorization__container_show"
+                                data-action="confirm-sms">
+                                <div class="authorization__title">
+                                    <div class="authorization__title-content">Введите код</div>
+                                </div>
+                                <div class="authorization__content">
+                                    <div class="authorization__desc">
+                                        <p style="display: block;" class="authorization__desc_account">Мы отправили его
+                                            на номер <span class="authorization__confirm-phone">+7 950 123-45-67</span>
+                                        </p>
+                                        <p style="display: none" class="authorization__desc_basket">Мы отправили его на
+                                            номер <span
+                                                class="authorization__confirm-phone authorization__confirm-phone-basket">+7
+                                                950 123-45-67</span></p>
+                                    </div>
+                                    <div class="authorization__telephone">
+                                        <div class="confirm-code"><input type="number" name="user_sms_confirm_code"
+                                                autocomplete="one-time-code"></div>
+                                    </div>
+                                    <div class="authorization__footer"><button
+                                            class="button button_wide-m button_red"><span
+                                                class="button__name">Подтвердить и войти</span></button></div>
+                                    <div class="confirm-footer">
+                                        <div class="authorization__note"><button data-repeat-action="login"
+                                                type="button">Повторить SMS</button></div>
+                                        <div class="authorization__note"><button data-action="change-phone"
+                                                type="button">Изменить номер</button></div>
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="authorization__container authorization__container_registration"
+                                data-action="registration">
+                                <div class="authorization__title" style="padding-bottom: 10px">
+                                    <div class="authorization__title-content">Регистрация</div>
+                                </div>
+                                <div class="authorization__content" style="display: none">
+                                    <div class="authorization__content-title">Через соц. сети</div>
+                                    <ul class="authorization__social-networks">
+                                        <li class="authorization__social"><button type="button" data-soc-type="vk"><img
+                                                    src="/files/images/icn-vk_l.svg"></button></li>
+                                        <li class="authorization__social"><button type="button" data-soc-type="fb"><img
+                                                    src="/files/images/icn-fb_l.svg"></button></li>
+                                        <li class="authorization__social"><button type="button" data-soc-type="tw"><img
+                                                    src="/files/images/icn-tw_l.svg"></button></li>
+                                        <li class="authorization__social"><button type="button" data-soc-type="gg"><img
+                                                    src="/files/images/icn-g_l.svg"></button></li>
+                                    </ul>
+                                </div>
+                                <div class="authorization__content authorization__content_grey">
+                                    <div class="authorization__content-title">По телефону</div>
+                                    <div class="authorization__telephone">
+                                        <div class="input-text">
+                                            <div class="input-text__box"><input type="tel" class="input-text__control"
+                                                    name="phone" placeholder="+7 XXX XXX-XX-XX" maxlength="16"></div>
+                                        </div>
+                                    </div>
+                                    <div class="authorization__agreement"><label
+                                            class="input-check input-check_small input-check_agreement">
+                                            <div class="input-check__box"><input class="input-check__control"
+                                                    type="checkbox" name="agreement" checked=""
+                                                    data-agreement-link="reg">
+                                                <div class="input-check__dec"></div>
+                                            </div>
+                                            <div class="input-check__label">Я согласен с <a
+                                                    href="/confidentiality-of-personal-information/"
+                                                    target="_blank">Политикой конфиденциальности</a></div>
+                                        </label></div>
+                                    <div class="authorization__note">
+                                        <p>Временный пароль будет отправлен по SMS</p>
+                                    </div>
+                                    <div class="authorization__footer"><button class="button button_red button_wide-m"
+                                            data-agreement-element="reg"><span
+                                                class="button__name">Зарегистрироваться</span></button></div>
+                                </div>
+                            </form>
+                            <div style="display: none;"
+                                class="authorization__container authorization__container_authorization-ask">
+                                <div class="authorization__content">
+                                    <div class="authorization__content-title">Вы зарегистрированы в Достаевском?</div>
+                                    <div class="authorization__desc">
+                                        <p>Тогда заходите в личный кабинет, получайте скидки, собирайте награды.</p>
+                                    </div>
+                                    <div class="authorization__footer"><button
+                                            class="button button_wide-m button_border" data-action="to-login"
+                                            type="button"><span class="button__name">Мы вас не узнали!</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="authorization__container authorization__container_registration-confirm"
+                                data-action="registration">
+                                <div class="authorization__title">
+                                    <div>Регистрация</div>
+                                </div>
+                                <div class="authorization__content">
+                                    <div class="authorization__desc">
+                                        <p><span class="authorization__confirm-name">Иннокентий</span>, здравствуйте!
+                                            <br>Проверьте правильность номера мобильного телефона:</p>
+                                    </div>
+                                    <div class="authorization__telephone">
+                                        <div class="input-text">
+                                            <div class="input-text__box"><input class="input-text__control" name="phone"
+                                                    placeholder="+7 XXX XXX-XX-XX" maxlength="16"></div>
+                                        </div>
+                                    </div>
+                                    <div class="authorization__note">
+                                        <p>Чтобы подтвердить номер телефона, мы&nbsp;отправим вам временный пароль по
+                                            SMS.</p>
+                                    </div>
+                                    <div class="authorization__footer"><button
+                                            class="button button_wide-m button_red"><span class="button__name">Отправить
+                                                пароль</span></button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div><button class="modal-window__close" type="button" title="Закрыть"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
