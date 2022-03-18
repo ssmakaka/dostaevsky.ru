@@ -1989,13 +1989,13 @@ input {
 }
 
 .main-nav__link_promo {
-  background-image: url(/files/images/icn-discount-new.svg);
+  background-image: url(../files/images/icn-discount-new.svg);
   background-repeat: no-repeat;
 }
 
 @media (max-width: 1099px) {
   .main-nav__link_promo {
-    background-image: url(/files/images/icn-shares.svg);
+    background-image: url(../files/images/icn-shares.svg);
     background-position: calc(50% - 1px) 16px;
   }
 }
@@ -6549,12 +6549,6 @@ input {
   transition: opacity .2s, -webkit-transform .2s;
   transition: transform .2s, opacity .2s;
   transition: transform .2s, opacity .2s, -webkit-transform .2s;
-}
-
-@media (min-width: 737px) {
-  .load-content {
-    z-index: 9;
-  }
 }
 
 @media (min-width: 1100px) {
